@@ -43,3 +43,21 @@ I started working on the CAD for a shredder, I wanted it to be able to crush dow
 
 https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9ff9146/e/d5dffae5cc0ec32277c5b998?renderMode=0&uiState=68f300e243911c5820e42be2  
 
+## 10/18/2025 2 PM - Main Body CAD  
+
+I had the sketch from earlier that I used to make this main body, I had to change a few things in order for all the parts to fit. I might have to go back and make more changes as I don't have all the parts and dimentions may not be what they advertize in the images 
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzEwOSwicHVyIjoiYmxvYl9pZCJ9fQ==--917dd7568894a09987dff44bbd8b2a39ff5961cb/image.png)
+
+This is what I have so far, I like the overall shape. I had a hard time with some of the component place ments so I just made a masive back place where I can mount the ramps board and other parts
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzExMCwicHVyIjoiYmxvYl9pZCJ9fQ==--8cf2aad3abdf227930821be89e638e7d12a328fb/image.png)
+
+It took a lot of back and forth to get all components to fit in a small form factor.
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzExMSwicHVyIjoiYmxvYl9pZCJ9fQ==--8d7d4f9fffac7ba78559f8c62540721604bc49dd/image.png)
+
+I also started an assembly where I will be adding all the parts as I design them
+
+https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9ff9146/e/d5dffae5cc0ec32277c5b998?renderMode=0&uiState=68f300e243911c5820e42be2
+  
+
