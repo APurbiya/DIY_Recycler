@@ -29,10 +29,17 @@ https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9f
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mjg0MiwicHVyIjoiYmxvYl9pZCJ9fQ==--a2a6708be1471bba3cfbb206a632620fe239552a/image.png)
   
 
-## 10/18/2025 - Added Items to BOM  
+## 10/18/2025 8 AM - Added Items to BOM  
 
 I changed the formatting of the BOM today and added two items that I forgot yeaterday. I ordered the new parts so they should arrive soon as well. The parts I ordered yeaterday should also com ebefore the end of the weekend and that will help me spped up my cad work. I am going to finish the sketch later today. I am not sure if the 775 stepper motor will get the job done but I hope it does, I might have to gear it maybe 5:1 or maybe even more.
 
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzAwNiwicHVyIjoiYmxvYl9pZCJ9fQ==--074f6918b8bc028b3f8f2449eb51ee063a1c1218/image.png)
   
+
+## 10/18/2025 10 AM - Shredder CAD  
+
+I started working on the CAD for a shredder, I wanted it to be able to crush down Bambu poop down to a size where it could be run through a pelet extruder. I came accross this model https://www.printables.com/model/738194-micro-plastic-shredder I liked it but it was missing a few things I wanted so I based my model off that one ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzAxNCwicHVyIjoiYmxvYl9pZCJ9fQ==--5251d4a98b32487f09d0bf2968f338c51d965afe/image.png) I added a mount for a 775 motor and a 5:1 gear ratio to test it. I was also able to get the model sliced and off to my printers to print. I want to make sure the shredder works before working on the CAD for the main frame just incase I need to try something different, you can find the cad on onshape and I will uplooad the step files on Github as well.
+
+
+https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9ff9146/e/d5dffae5cc0ec32277c5b998?renderMode=0&uiState=68f300e243911c5820e42be2  
 
