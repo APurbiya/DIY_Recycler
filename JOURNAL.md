@@ -29,3 +29,10 @@ https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9f
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mjg0MiwicHVyIjoiYmxvYl9pZCJ9fQ==--a2a6708be1471bba3cfbb206a632620fe239552a/image.png)
   
 
+## 10/18/2025 - Added Items to BOM  
+
+I changed the formatting of the BOM today and added two items that I forgot yeaterday. I ordered the new parts so they should arrive soon as well. The parts I ordered yeaterday should also com ebefore the end of the weekend and that will help me spped up my cad work. I am going to finish the sketch later today. I am not sure if the 775 stepper motor will get the job done but I hope it does, I might have to gear it maybe 5:1 or maybe even more.
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzAwNiwicHVyIjoiYmxvYl9pZCJ9fQ==--074f6918b8bc028b3f8f2449eb51ee063a1c1218/image.png)
+  
+
