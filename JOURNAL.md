@@ -10,8 +10,13 @@ This is my journal of the design and building process of **Filament Recycler**.
 You can view this journal in more detail on **Hack Club Blueprint** [here](https://blueprint.hackclub.com/projects/575).
 
 
-## 10/17/2025 - Drawing Rought Sketches   
+## 10/17/2025 1 PM - Drawing Rought Sketches   
 
 I started brainstroming ideas and sketched out some ideas of how everything can be positioned. I had to think about overall size as I want to keep it kinda small. Next I am going to look of some of the parts and start sketching it in Onshape. I also need to see if a motor can power a mini shreder. I also need to run 2 stepper motors one from extruder and spooler. I am thinking of using the RAMPS 1.4 board. I looked into all the power requierments but I need to find a good power supply![PXL_20251017_203021542.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mjc0NCwicHVyIjoiYmxvYl9pZCJ9fQ==--fbde216a4efbf2e1c35edbb74509fa38e3c6f60b/PXL_20251017_203021542.jpg)
+  
+
+## 10/17/2025 5 PM - Researched Parts & Created a List  
+
+I did a lot of research looking to see if anyone had already done something like this before or any parts or components I can find. I did not see anything promising so I created a list of parts I think I will need. I am most likely going to change parts as I get more and more into the project but for now this it it. I also went on printables where I found a pelitizer model which gave me an idea for the shredder and why I have a router bit in my BOM. I already have some of the parts but I have ordered all the other parts and they should  come in a a week untill then I am most likly going to work on cad. ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjgxNCwicHVyIjoiYmxvYl9pZCJ9fQ==--ed4ce9f8c55fe3a3ec5338a7b4899f3430622662/image.png)
   
 
