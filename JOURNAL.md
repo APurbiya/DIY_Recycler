@@ -20,3 +20,12 @@ I started brainstroming ideas and sketched out some ideas of how everything can 
 I did a lot of research looking to see if anyone had already done something like this before or any parts or components I can find. I did not see anything promising so I created a list of parts I think I will need. I am most likely going to change parts as I get more and more into the project but for now this it it. I also went on printables where I found a pelitizer model which gave me an idea for the shredder and why I have a router bit in my BOM. I already have some of the parts but I have ordered all the other parts and they should  come in a a week untill then I am most likly going to work on cad. ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjgxNCwicHVyIjoiYmxvYl9pZCJ9fQ==--ed4ce9f8c55fe3a3ec5338a7b4899f3430622662/image.png)
   
 
+## 10/17/2025 7 PM - Started Working on CAD Sketch  
+
+I hoped into onshape and started working on the CAD sketch, I took what I drew out and then make a rought sketch after which I had to go to many different product pages to get dimentions of the different items I want to use and dimention that in. This all tool a long time because I wanted to dimention everything as accuratly as I can so its easier for me later down the line. The angle on the side is where I would want to mount the button and stuff, still need to figure out how the shredder will work.
+
+https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9ff9146/e/d5dffae5cc0ec32277c5b998?renderMode=0&uiState=68f300e243911c5820e42be2
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mjg0MiwicHVyIjoiYmxvYl9pZCJ9fQ==--a2a6708be1471bba3cfbb206a632620fe239552a/image.png)
+  
+
