@@ -70,3 +70,24 @@ I got the shredder prints all cleaned up and put the assembly together and conen
 ![PXL_20251018_234013173.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzE0MiwicHVyIjoiYmxvYl9pZCJ9fQ==--b1d65f86bf4148e98dd7fc1abe76ba4501eb15d8/PXL_20251018_234013173.jpg)
   
 
+## 10/18/2025 8 PM - Extruder CAD  
+
+I just worked on the CAD for the extruder, and I know right now it dose not look like much because I did not add the motor or the heat block or pipe. But when I do the assembly tomorrow I promise it will all make sense. I had to model some plates that would screw in with some M3 double pass spacers, a fan duct to aim the air flow where I want it and then the pellet duct to get the pellets to the screw.
+
+This is the stack of plates
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzE3MiwicHVyIjoiYmxvYl9pZCJ9fQ==--0f440278854bed80f40dc3ccf665416f6432ecb6/image.png)
+
+This is for the fan
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzE3MywicHVyIjoiYmxvYl9pZCJ9fQ==--34f8f84256d60b394794619645e53b1538f26dcf/image.png)
+
+And this if for the pellets
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzE3NCwicHVyIjoiYmxvYl9pZCJ9fQ==--b688d2a253405bc3bfe6bfb51e3fe28b64954408/image.png)
+
+I had a hard time with all the lofts as it was hard to get all the profiles and faces just right. I also sliced it and started the print. I will assembel everything tomorrow morning.
+
+https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9ff9146/e/d5dffae5cc0ec32277c5b998?renderMode=0&uiState=68f300e243911c5820e42be2
+
+
+
+  
+
