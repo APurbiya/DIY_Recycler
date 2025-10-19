@@ -61,3 +61,12 @@ I also started an assembly where I will be adding all the parts as I design them
 https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9ff9146/e/d5dffae5cc0ec32277c5b998?renderMode=0&uiState=68f300e243911c5820e42be2
   
 
+## 10/18/2025 5 PM - Shredder Assembly   
+
+I got the shredder prints all cleaned up and put the assembly together and conencted it to a motor driver to test if this would work. It turns! But when I put poop in there it just stalled under the load. So the 5:1 gear ratio is not going to work going any more that that and the project just gets huge so I found and ordered a cheap 20 buck drill from harbor freight lets see if that works. I put in a some work cleaning the gears as I printed them in resin but it was all for nothing :(
+
+![PXL_20251018_222125109.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzE0MywicHVyIjoiYmxvYl9pZCJ9fQ==--c0b242a0eb02c6e74d84147747ad87900b86185a/PXL_20251018_222125109.jpg)
+![PXL_20251018_222129035.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzE0NCwicHVyIjoiYmxvYl9pZCJ9fQ==--089805e91d7790a77bf8eeaaa15b63f318a9f02d/PXL_20251018_222129035.jpg)
+![PXL_20251018_234013173.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzE0MiwicHVyIjoiYmxvYl9pZCJ9fQ==--b1d65f86bf4148e98dd7fc1abe76ba4501eb15d8/PXL_20251018_234013173.jpg)
+  
+
