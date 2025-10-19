@@ -91,3 +91,23 @@ https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9f
 
   
 
+## 10/19/2025 - Extruder Assembly  
+
+This morning I started of my cleaning all the prints but washing and then curing them
+![PXL_20251018_174607597.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQyMywicHVyIjoiYmxvYl9pZCJ9fQ==--eb7118f3fea73fdf7825f5e2d63163333d1e76ee/PXL_20251018_174607597.jpg)
+After that I crimped the stepper motor wiers and screwed in the gearbox
+![PXL_20251019_170132590.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQyNCwicHVyIjoiYmxvYl9pZCJ9fQ==--7997046b6d06b0a294ab76f1c64959e4e906e6ec/PXL_20251019_170132590.jpg)
+
+And then I got rest of the parts assembeled and then made a wire harness for the fans and the temp sensor, I soldered one side of it and crimped the other side. Dupont is not easy to crimp :(
+
+I glued the fans on and put everything together. I had to do the crimp a few times as I did not get it right the first time.
+
+Now most of the extruder is = together just need to do some cabel management and then test the heating and motor later today
+![PXL_20251019_170052238.MP.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQyNywicHVyIjoiYmxvYl9pZCJ9fQ==--7622da4ae8f35f42a69ae368b95ddae4d793a334/PXL_20251019_170052238.MP.jpg)
+![PXL_20251019_170039423.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQyNiwicHVyIjoiYmxvYl9pZCJ9fQ==--1be80b64edf7aa61d8d34f26098861f4162c0518/PXL_20251019_170039423.jpg)
+
+
+![PXL_20251019_170212631.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQyOCwicHVyIjoiYmxvYl9pZCJ9fQ==--ba9443a3428f0b91d54e7a0aaf382a99ab21cced/PXL_20251019_170212631.jpg)
+
+  
+
