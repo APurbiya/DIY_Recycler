@@ -251,3 +251,15 @@ void loop() {
 `
   
 
+## 10/19/2025 2 PM - Main Body CAD V2  
+
+Last time I worked on main body CAD I designed it so the shredder would be powered by a 775 motor but since that doesn't work I had to change the CAD to fit a drill motor and gear box. This was very hard to do as I basicaly has to start over and because I don't have the drill I bought yet I had to guess the dimentions so I will probably have to change it again in a few days when I get it. I also added a slot for the power cord and a power switch in the back. 
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzU0OSwicHVyIjoiYmxvYl9pZCJ9fQ==--ca48221814a0b4903676539923e10ba4f2f32d9f/image.png)
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzU1MSwicHVyIjoiYmxvYl9pZCJ9fQ==--bec1db434cf0ba17988d69fbae564da817d2cdad/image.png)
+
+I also have to cut out vent holes for the fan and do some more stuff, but I am taking a break from CAD for a bit
+
+  
+
