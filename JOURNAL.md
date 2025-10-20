@@ -263,3 +263,22 @@ I also have to cut out vent holes for the fan and do some more stuff, but I am t
 
   
 
+## 10/19/2025 7 PM - More CAAAAD  
+
+I know I said I am not doing CAD anymore but I wanted to get some more work done. Here is what I got done. Created the gears for the spooler system, also made the mount which kinda works like the AMS lite mount. Made the fan vent and then resized the shredder part to maybe fit and drill and the shredder, I also made the holes for the stepper motor mount of the extruder and the cover plate for that.
+
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzYzMSwicHVyIjoiYmxvYl9pZCJ9fQ==--989bb14ead5ac2ec38448ac79d9adf88570cee45/image.png)
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzYzMiwicHVyIjoiYmxvYl9pZCJ9fQ==--284a6ec9be321d37956bb35727b793d94be68176/image.png)
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzYzMywicHVyIjoiYmxvYl9pZCJ9fQ==--a0e28335cc4b40347489b1a5ebb336f37c2dad54/image.png)
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzYzNCwicHVyIjoiYmxvYl9pZCJ9fQ==--20bb1d18591e190041c52f8431f7f92ffa03606f/image.png)
+
+
+All cad is on onshape for now, I will put it on Git Hub when I get some more work done and it looks better.
+
+https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9ff9146/e/d5dffae5cc0ec32277c5b998?renderMode=0&uiState=68f300e243911c5820e42be2
+  
+
