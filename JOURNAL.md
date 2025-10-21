@@ -278,7 +278,7 @@ All cad is on onshape for now, I will put it on Git Hub when I get some more wor
 https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9ff9146/e/d5dffae5cc0ec32277c5b998?renderMode=0&uiState=68f300e243911c5820e42be2
   
 
-## 10/20/2025 - Some CAD and assembly  
+## 10/20/2025 5 PM - Some CAD and assembly  
 
 Got a lott of work done today, started the day with printing and cleaning up a print to replace one of the extruder plates that was cracking, the print was 6 mins but then cleaning curing took a while.
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mzg4MywicHVyIjoiYmxvYl9pZCJ9fQ==--54a8681972936d73cddf612d1bca5834df88f9ac/image.png)
@@ -299,5 +299,19 @@ this is what the final extruder looks as of right now
 
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mzg5MCwicHVyIjoiYmxvYl9pZCJ9fQ==--df063ad0266eceff98e956aadfec99f58baa365f/image.png)
 
+  
+
+## 10/20/2025 9 PM - Spooler CAD  
+
+I have been worrying less about the spooler untilll now... I finalized the gear ratio I will be using for the spooler to work with a stepper motor the ratio I am planing on using is 170:30. The really big gear needs to attach to a part that can allow a spool to be slotted in which I designed previously. I was planing on printing a rod on the gear and the sliding it on but the rod would be week due to direction of layer lines so I re-did that to have a sort of slot and I am going to glue it in place now.
+
+This is what the gear looks like
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzkzOSwicHVyIjoiYmxvYl9pZCJ9fQ==--3015a50191109f6d0eae5b642f521de78d3be7d9/image.png)
+
+
+and then the AMS lite coupler
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mzk0MCwicHVyIjoiYmxvYl9pZCJ9fQ==--04afac79b5d4178fc703c86f18440b11c331e99d/image.png)
+
+I had to firsly do a lot of research to figure out how large the gear ratio needs to be in order for me to get enough power. But once I got that the rest seemed okay. I have to now add this to the list of things I need to print. Before the 170teeth gear I had done 180 based on rough math but I realized that was too big almost 18cm across. 
   
 
