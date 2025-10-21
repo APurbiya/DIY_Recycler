@@ -6,10 +6,6 @@
   ==================================================================
 -->
 
-This is my journal of the design and building process of **Filament Recycler**.  
-You can view this journal in more detail on **Hack Club Blueprint** [here](https://blueprint.hackclub.com/projects/575).
-
-
 ## 10/17/2025 1 PM - Drawing Rought Sketches   
 
 I started brainstroming ideas and sketched out some ideas of how everything can be positioned. I had to think about overall size as I want to keep it kinda small. Next I am going to look of some of the parts and start sketching it in Onshape. I also need to see if a motor can power a mini shreder. I also need to run 2 stepper motors one from extruder and spooler. I am thinking of using the RAMPS 1.4 board. I looked into all the power requierments but I need to find a good power supply![PXL_20251017_203021542.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mjc0NCwicHVyIjoiYmxvYl9pZCJ9fQ==--fbde216a4efbf2e1c35edbb74509fa38e3c6f60b/PXL_20251017_203021542.jpg)
@@ -280,5 +276,23 @@ I know I said I am not doing CAD anymore but I wanted to get some more work done
 All cad is on onshape for now, I will put it on Git Hub when I get some more work done and it looks better.
 
 https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9ff9146/e/d5dffae5cc0ec32277c5b998?renderMode=0&uiState=68f300e243911c5820e42be2
+  
+
+## 10/20/2025 - Some CAD and assembly  
+
+Got a lott of work done today, started the day with printing and cleaning up a print to replace one of the extruder plates that was cracking, the print was 6 mins but then cleaning curing took a while.
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mzg4MywicHVyIjoiYmxvYl9pZCJ9fQ==--54a8681972936d73cddf612d1bca5834df88f9ac/image.png)
+
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mzg4NCwicHVyIjoiYmxvYl9pZCJ9fQ==--37846de8386df81283026c43c91d67e49fcd2736/image.png)
+
+then in the afternoon I worked on cad I did some of the math to figure out where the pellet pipe would go and then designed the pipe and added that all to the assembly
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mzg4NywicHVyIjoiYmxvYl9pZCJ9fQ==--8f8951859ecf0bc5e8e199ba76ad390ab1743881/image.png)
+
+I also had to clean up some of the files, and then I organized the git hub repo so all the cad files are in order.
+
+Then I assembeled the plates that I printed in the morning onto the extruder, I also had to glue the 2 fans back on. I used like 10x the hot glue I used the first time to make sure it stays stuck this time.
+
+I am very close to start printing all the parts, the drill arrives tomorrow. I am going to take it apart for the motor then I will make the changes in the CAD for the drill and then slice to start the prints.
   
 
