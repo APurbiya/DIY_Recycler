@@ -294,5 +294,10 @@ I also had to clean up some of the files, and then I organized the git hub repo 
 Then I assembeled the plates that I printed in the morning onto the extruder, I also had to glue the 2 fans back on. I used like 10x the hot glue I used the first time to make sure it stays stuck this time.
 
 I am very close to start printing all the parts, the drill arrives tomorrow. I am going to take it apart for the motor then I will make the changes in the CAD for the drill and then slice to start the prints.
+
+this is what the final extruder looks as of right now
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mzg5MCwicHVyIjoiYmxvYl9pZCJ9fQ==--df063ad0266eceff98e956aadfec99f58baa365f/image.png)
+
   
 
