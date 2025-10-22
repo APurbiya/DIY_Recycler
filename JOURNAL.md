@@ -315,3 +315,25 @@ and then the AMS lite coupler
 I had to firsly do a lot of research to figure out how large the gear ratio needs to be in order for me to get enough power. But once I got that the rest seemed okay. I have to now add this to the list of things I need to print. Before the 170teeth gear I had done 180 based on rough math but I realized that was too big almost 18cm across. 
   
 
+## 10/21/2025 - Shredder Assembly Test and CAD  
+
+The drill arrived, so I started by taking it all apart for its motor and gearbox system, this is causr my original idea with that 775 and the 5:1 gear ratio did not work. Once I took the drill appart I and to de-solder the motor because I did not want to use that control cuircetry.
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDI1MiwicHVyIjoiYmxvYl9pZCJ9fQ==--8eab54c91180b30157c7b0876de7dd7920c76082/image.png)
+
+After that I attached my router bit to the drill and connected the wiers from a 12v psu and the motor controler. After which I started slowly testing if this could shred stuff which it could. While testing this is what my table looked like
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDI1MywicHVyIjoiYmxvYl9pZCJ9fQ==--3f756f922f5d63f962a0abe81aa11dc33bb1ae76/image.png)
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDI1NCwicHVyIjoiYmxvYl9pZCJ9fQ==--4f7125e84cdd67561ae1c99148de9da8d2435b59/image.png)
+
+Since this set up was able to do its job, I moved on to the longer part of fixing all the CAD to get everything ready for printing. I made a slot in the back for the motor and gearbox, made the slot in the top for the shredder and cleaned up all the dimentions 
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDI1NSwicHVyIjoiYmxvYl9pZCJ9fQ==--e446b29060776e8fa6ba198337690a0cb1770df2/image.png)
+ 
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDI1NiwicHVyIjoiYmxvYl9pZCJ9fQ==--25758dff80149b6364f4260d9bf8864670e25193/image.png)
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDI1NywicHVyIjoiYmxvYl9pZCJ9fQ==--03dd187e2750fb53eb3c09fc9ab43bf35beb63bb/image.png)
+The hardest part in all of this was holding the drill down while testing, becuase the motor body would just spining if I didn't hold it down right thats why the slot in the back is cut out spcificaly to hold the motor
+
+https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9ff9146/e/9421cdad7b2ed0ff19b5ca85?renderMode=0&uiState=68f835e3c2ceee0d5037548a
+
+
+
+  
+
