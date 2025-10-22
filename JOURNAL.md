@@ -337,3 +337,32 @@ https://cad.onshape.com/documents/801ecd6329a45d18a34da95f/w/21c4afe4d5408c28a9f
 
   
 
+## 10/22/2025 - Slpit, SLiced, and Printing  
+
+I stated by cutting the main body cad into parts that could be fit on the build plate of the printers at my school. I also had to see what way to split would affect the least amount of featurs. This is how I split it up
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDU1NywicHVyIjoiYmxvYl9pZCJ9fQ==--e44dab014f4ffd3b8de845d790a592d6f6b77814/image.png)
+
+Then I opened up cura and then one by one sliced up all the parts, this is when I reallized in there default orientation it would take lot of supports and 30h per part, so I started messing with orientation. Once I was happy with all of this the saved all of the files. At this point each print would take 24 hour :( 
+
+Then at school I got the printers set up by trying spools thta had been dryed over night and calibrating the print cores of the ultimaker s5 (there were 2 printers)
+
+Then I started the print and checked to make sure the first layer was coming down okay.
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDU1OSwicHVyIjoiYmxvYl9pZCJ9fQ==--50e47e0d9af6f681289ba36d76c5c0124b9d4473/image.png)
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDU2MCwicHVyIjoiYmxvYl9pZCJ9fQ==--f609e9844f9924a08d676289911bde6771e5d752/image.png)
+
+When I went back to check after an hour I realized the nozzel got clogged cause this is what I saw
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDU2MSwicHVyIjoiYmxvYl9pZCJ9fQ==--6e8fa6fbfb90a6dded80f9e8d4309b3230bd211f/image.png)
+
+So I used the neddel first then did a few cold pulls to solve this and then started the print again. 
+
+6 hours into the print I realized something about that cad
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDU2MiwicHVyIjoiYmxvYl9pZCJ9fQ==--49670e92d166dfacfb402a50056183df8c3c308c/image.png)
+This part the holds the motor in place should have been a seperate part and I should screw it in so I can adjust where it needs to be. 
+
+So the new plan is to let the print finish and then I will just cut the current part out if it doesn't work  and print just the part and then screw it in.
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDU2MywicHVyIjoiYmxvYl9pZCJ9fQ==--e30888df8266500d08c59d9e874f4ea03704336e/image.png)
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDU2NCwicHVyIjoiYmxvYl9pZCJ9fQ==--b632606fee56e4525f6e58c583c31b718de6b09a/image.png)
+  
+
