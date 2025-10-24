@@ -378,3 +378,15 @@ I also got the other 2 prints started so I should have them by tomorrow.
 
   
 
+## 10/24/2025 - Some more print clean up  
+
+I printed 2 more parts that I am going to need in order to put everything together. I printed these in resin so the clean up and post processing to longer. I had already done the cad so all had to do was slices, and then when the print was done some clean up.
+
+Now I have almost all the parts I need to put everything together
+
+![Screenshot 2025-10-23 210219.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTEwNiwicHVyIjoiYmxvYl9pZCJ9fQ==--dbc58f496100b3fdbb408cecce24300e2cc258b2/Screenshot%202025-10-23%20210219.png)
+
+![Screenshot 2025-10-23 210344.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTEwNywicHVyIjoiYmxvYl9pZCJ9fQ==--76af4d685ca1a2ee7cdbbb63ac32d46c6252299f/Screenshot%202025-10-23%20210344.png)
+
+  
+
