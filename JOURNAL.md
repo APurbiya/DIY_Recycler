@@ -378,7 +378,7 @@ I also got the other 2 prints started so I should have them by tomorrow.
 
   
 
-## 10/24/2025 - Some more print clean up  
+## 10/24/2025 7 AM - Some more print clean up  
 
 I printed 2 more parts that I am going to need in order to put everything together. I printed these in resin so the clean up and post processing to longer. I had already done the cad so all had to do was slices, and then when the print was done some clean up.
 
@@ -388,5 +388,16 @@ Now I have almost all the parts I need to put everything together
 
 ![Screenshot 2025-10-23 210344.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTEwNywicHVyIjoiYmxvYl9pZCJ9fQ==--76af4d685ca1a2ee7cdbbb63ac32d46c6252299f/Screenshot%202025-10-23%20210344.png)
 
+  
+
+## 10/24/2025 4 PM - 4/4 Prints Done!  
+
+The last 2 of the big parts were done printing, I started by getting them off the build plate and then washing both the build plates with soap and water I had put soo much glue that I had to scrape form of the glue off, then I started removing the supports, these 2 had the hardest supports because of the psu slot it was a really large 90 deg overhang. Once I got all the supports off I spent some time sanding all the surfaces that were going to get glued, I went from 320 to 220 on these parts as well. There was a small defect in the first 2 prints so I had to sand extra hard because other wise the parts didn't line up. ![Screenshot 2025-10-24 161219.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTMxMCwicHVyIjoiYmxvYl9pZCJ9fQ==--bbd7aa428451dc9f6c8f1a85284c3d472b25a4e2/Screenshot%202025-10-24%20161219.png)
+![Screenshot 2025-10-24 161229.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTMxMiwicHVyIjoiYmxvYl9pZCJ9fQ==--bf82e2370ec596ec55f68859b126804102a87cd6/Screenshot%202025-10-24%20161229.png)
+![Screenshot 2025-10-24 161240.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTMxMSwicHVyIjoiYmxvYl9pZCJ9fQ==--59978d93daa0804e6ce88e897509abb2df688546/Screenshot%202025-10-24%20161240.png)
+
+
+This is the final result, I am ready to start placing all the components in. I still need to print a few components but other than that we are making good progress.
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTMxMywicHVyIjoiYmxvYl9pZCJ9fQ==--4273b2eb8eb072e8a52b05cf2e15c538cc74331e/image.png)
   
 
