@@ -366,3 +366,15 @@ So the new plan is to let the print finish and then I will just cut the current 
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDU2NCwicHVyIjoiYmxvYl9pZCJ9fQ==--b632606fee56e4525f6e58c583c31b718de6b09a/image.png)
   
 
+## 10/23/2025 - 2/4 prints done!  
+
+I had stated the prints yesterday and today 2 of them were done (kinda) on of the printers tripped the breaker with only 2 hours left but the other print turned out well.
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDkzMCwicHVyIjoiYmxvYl9pZCJ9fQ==--f4433a4f45881fa9a73c8b1c2f65cc550bcda8f6/image.png)
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDkzMSwicHVyIjoiYmxvYl9pZCJ9fQ==--134460e729cde8ee4f33eddbc0c216f95b5df0a6/image.png)
+
+So I measure upto the part that worked re sliced only the falied part and then started that print, once that was done I took it off removed a lot of supports. This was probably the hardest part. At one point I had to pour hot water into the part to melt the supports out. Once I got all of that done I sanded all the edges that needed to be glued first with 320 grit to flatten and then with 220 to score it a little for the glue to work. Then I used medium CA glue to stick the 3 parts toether. 
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDkzNSwicHVyIjoiYmxvYl9pZCJ9fQ==--0a5f09de7b263eaf75b3c90f91abd2530eb51c46/image.png)
+I also got the other 2 prints started so I should have them by tomorrow.
+
+  
+
