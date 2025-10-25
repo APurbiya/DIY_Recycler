@@ -401,3 +401,12 @@ This is the final result, I am ready to start placing all the components in. I s
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTMxMywicHVyIjoiYmxvYl9pZCJ9fQ==--4273b2eb8eb072e8a52b05cf2e15c538cc74331e/image.png)
   
 
+## 10/25/2025 - Assembling Components  
+
+Since I had the main frame all printed I started getting all the components in there clued up. I started with the psu the plug and the switch. Soldering these wiers were a pain becuase of the angle. the wire fell out like 5-6 times. I wanted to make sure that wire would not fall out cause what was the AC power.  Then I started glueing all the compontents and the fan to see how best I could fit everything. I also got the rotory encoder screwed in from the outside for the shredder and the button. I also glued a came for the arduino mega date came extention. After I glued all of that I sliced and stated printing some more parts that I am going to need for the next steps!
+Just as I was writing this journal I realized I messed up if you look care fully you will see the arduino mega is glued in exactly where the stepper motor is going to get screwed in. So now I need to figure out a new placement for everything.
+![Screenshot 2025-10-25 091138](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTUyMiwicHVyIjoiYmxvYl9pZCJ9fQ==--cf0003ee9da35f5188300a2f5af3dcf80fc49887/Screenshot%202025-10-25%20091138.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTUyMywicHVyIjoiYmxvYl9pZCJ9fQ==--d8a126f9de1aa04c6b83b14f29962d99a92d1e50/image.png)
+
+  
+
