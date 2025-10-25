@@ -401,12 +401,24 @@ This is the final result, I am ready to start placing all the components in. I s
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTMxMywicHVyIjoiYmxvYl9pZCJ9fQ==--4273b2eb8eb072e8a52b05cf2e15c538cc74331e/image.png)
   
 
-## 10/25/2025 - Assembling Components  
+## 10/25/2025 12 PM - Assembling Components  
 
 Since I had the main frame all printed I started getting all the components in there clued up. I started with the psu the plug and the switch. Soldering these wiers were a pain becuase of the angle. the wire fell out like 5-6 times. I wanted to make sure that wire would not fall out cause what was the AC power.  Then I started glueing all the compontents and the fan to see how best I could fit everything. I also got the rotory encoder screwed in from the outside for the shredder and the button. I also glued a came for the arduino mega date came extention. After I glued all of that I sliced and stated printing some more parts that I am going to need for the next steps!
 Just as I was writing this journal I realized I messed up if you look care fully you will see the arduino mega is glued in exactly where the stepper motor is going to get screwed in. So now I need to figure out a new placement for everything.
 ![Screenshot 2025-10-25 091138](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTUyMiwicHVyIjoiYmxvYl9pZCJ9fQ==--cf0003ee9da35f5188300a2f5af3dcf80fc49887/Screenshot%202025-10-25%20091138.png)
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTUyMywicHVyIjoiYmxvYl9pZCJ9fQ==--d8a126f9de1aa04c6b83b14f29962d99a92d1e50/image.png)
+
+  
+
+## 10/25/2025 4 PM - Extruder Assembly V3    
+
+While I was installing the extruder I riped one of the fans off, and I need to replace the chute as well. Luckly I had the new shorter one printed already, so I started by removing the prints and cleaning them off. The chute was easy the shredder part which was on the same build plate was a pain because I had to drain all the resin out from inside by flushing it with some IPA. But after that was all done I cured and the started un screwing the extruder to replace the chute, after than I put most of it back together and got the both the fans hot glued back on. I also added a dc motor with a off set screw to act like a vibrator to help avoid clogs in the chute. I put everything back together. I was trying to get the extention pipe on when I realized the hole in my 3d printed case what not big enough. I hand sanded the hole until it was big enought. That was all I got done. Next I need to fix the electronics on the back
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTU2NSwicHVyIjoiYmxvYl9pZCJ9fQ==--baba289ed6b5b11a06af5d84e796b4b14a37082d/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTU2NiwicHVyIjoiYmxvYl9pZCJ9fQ==--84e5eb3be7e6fc4b0040453c8442defee2cbe5a7/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTU2NywicHVyIjoiYmxvYl9pZCJ9fQ==--162ae41688fd573a28ba19d8f862aedc08263a05/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTU2OCwicHVyIjoiYmxvYl9pZCJ9fQ==--80572a27c051c52bffcd5923df0cbeca713c522f/image.png)
+
+
 
   
 
