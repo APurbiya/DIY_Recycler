@@ -422,3 +422,10 @@ While I was installing the extruder I riped one of the fans off, and I need to r
 
   
 
+## 10/25/2025 7 PM - Rear Component Placement fixed!  
+
+I had glued the ramps 1.4 board and the buck converter to the back before but had messed up and glued them where the stepper motor was supposed to go. So I spent time removing the components, I was scared about this because I did not want to break the PCB but I had to get the parts off. Once I got them off I figured out new placement and triple checked everything before gluing it down. After the hotglue set I got all the power wires routed and connected. While going so I broke the solder on the switch that I had solded 5 times before already so I got some extra flux scrached the surface of the switch prong then going into that akward spot with a soldering iron I got it togeether.
+Now all componets have power
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTYwNiwicHVyIjoiYmxvYl9pZCJ9fQ==--fd5b0dacfd5cb58840c022a22777ed87e41a7d59/image.png)
+  
+
