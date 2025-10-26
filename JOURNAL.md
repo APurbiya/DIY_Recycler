@@ -447,3 +447,13 @@ While testing the shredder, I put some of the filamanet scraps in the top and tu
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTgwNywicHVyIjoiYmxvYl9pZCJ9fQ==--52e7b6cf795ae5928261bf09e3eb9b9bbdf8ffa3/image.png)
   
 
+## 10/26/2025 3 PM - CAD Changes  
+
+Since I realized that the motor count currently doesn't work I fixed it in cad to slot in and hopefully not let the motor spin anymore. I also fixed the pipe that connects to the chute because It was rally thick and the ID was not very big. I have sliced these prints and will start the print later today.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTgzNSwicHVyIjoiYmxvYl9pZCJ9fQ==--6bc56f8a218903a8487a61be6ef2f726ce4a2f9d/image.png)
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTgzNiwicHVyIjoiYmxvYl9pZCJ9fQ==--a6a6e0c5fcf0e7ba578f1e3da07c80918b20d60e/image.png)
+
+  
+
