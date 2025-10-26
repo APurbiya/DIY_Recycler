@@ -429,3 +429,14 @@ Now all componets have power
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTYwNiwicHVyIjoiYmxvYl9pZCJ9fQ==--fd5b0dacfd5cb58840c022a22777ed87e41a7d59/image.png)
   
 
+## 10/26/2025 - Shredder + Motor Assembeled  
+
+Yesterday I had cleaned up the shredder print so today I started getting it put into the main frame. I started by curring the ruler with the dremel so it is the correct length to go into the print. I got the drill gear box screwed in and then I could slide the whole thing in. This is when I realized that the print had not tolerance so I had to sand the thing untill it fit. This took really long since I had cured the resin. I also had to solder longer wiers to the motor but they wern't long enough so I solder some more wier to that. After it fit in I noticed I might have made a small mistake with the motor mounnt. It does not go all the way to the top so I think the motor might spin. While I was pack there I also glued in 2 relays, one of them was just a relay module the other one I had to custom make by looking up the scematics there was no clear way to do this so it took a lot of research and talking to Chat GPT. But I got it done. Next I am going to test the shredder with some poop.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTc0NywicHVyIjoiYmxvYl9pZCJ9fQ==--72a6e75b2368e342115efcb09b0d40ebfb4248a1/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTc0OCwicHVyIjoiYmxvYl9pZCJ9fQ==--1799c8d9fd92a1e60c6e3fac9e31554a226b9049/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTc0OSwicHVyIjoiYmxvYl9pZCJ9fQ==--8e25a88423b9301e6e0644a2858a1b048a76400d/image.png)
+
+
+  
+
