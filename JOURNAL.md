@@ -429,7 +429,7 @@ Now all componets have power
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTYwNiwicHVyIjoiYmxvYl9pZCJ9fQ==--fd5b0dacfd5cb58840c022a22777ed87e41a7d59/image.png)
   
 
-## 10/26/2025 - Shredder + Motor Assembeled  
+## 10/26/2025 10 AM - Shredder + Motor Assembeled  
 
 Yesterday I had cleaned up the shredder print so today I started getting it put into the main frame. I started by curring the ruler with the dremel so it is the correct length to go into the print. I got the drill gear box screwed in and then I could slide the whole thing in. This is when I realized that the print had not tolerance so I had to sand the thing untill it fit. This took really long since I had cured the resin. I also had to solder longer wiers to the motor but they wern't long enough so I solder some more wier to that. After it fit in I noticed I might have made a small mistake with the motor mounnt. It does not go all the way to the top so I think the motor might spin. While I was pack there I also glued in 2 relays, one of them was just a relay module the other one I had to custom make by looking up the scematics there was no clear way to do this so it took a lot of research and talking to Chat GPT. But I got it done. Next I am going to test the shredder with some poop.
 
@@ -438,5 +438,12 @@ Yesterday I had cleaned up the shredder print so today I started getting it put 
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTc0OSwicHVyIjoiYmxvYl9pZCJ9fQ==--8e25a88423b9301e6e0644a2858a1b048a76400d/image.png)
 
 
+  
+
+## 10/26/2025 1 PM - I popped a fuse :(  
+
+While testing the shredder, I put some of the filamanet scraps in the top and turned on the motor that all got scredded fine, but then I increased the speed and put some more, this is when the motor came out of the mount and started spinning the body and the fuse on the motor controler popped. I found and order some replacements but now in the mean time I need to do some more cad work to fix all this. I has to untangle all the wiers and clean up all the mess as well from this giant mess up :(
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTgwNywicHVyIjoiYmxvYl9pZCJ9fQ==--52e7b6cf795ae5928261bf09e3eb9b9bbdf8ffa3/image.png)
   
 
