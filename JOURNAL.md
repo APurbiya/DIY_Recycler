@@ -457,3 +457,10 @@ Since I realized that the motor count currently doesn't work I fixed it in cad t
 
   
 
+## 10/26/2025 7 PM - Started Wiring  
+
+I got a bunch of the wires criped and pluged in! Criping DuPont is not fun but I am working on getting better. So far I got the frist stepper motor, heater, 12v fan, button, temp sensor and rotory encoder all wired up. As I am doing this I am trying to keep all the wires as tidy as I can so trouble shooting later on is easy. I still need a wire the relays and the fans and motor. All the componets I still need to do run on 5v from the buck thats why I am doing that later.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTg3OCwicHVyIjoiYmxvYl9pZCJ9fQ==--de6171b0e349c8996a7826d00acab6c51b50fb2c/image.png)
+  
+
