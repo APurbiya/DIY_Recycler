@@ -464,3 +464,17 @@ I got a bunch of the wires criped and pluged in! Criping DuPont is not fun but I
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTg3OCwicHVyIjoiYmxvYl9pZCJ9fQ==--de6171b0e349c8996a7826d00acab6c51b50fb2c/image.png)
   
 
+## 10/27/2025 - Print and finish wiring  
+
+Today I started by slicing everthing that I haven't already printed, then I started the print. When I checked on it in an hour 1 of the prints was going fine the other did not. So I purged the nozzel and cleaned it with come cold pulls and then restarted the print.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjA5MywicHVyIjoiYmxvYl9pZCJ9fQ==--9e5c7b9ddbf309140a97fa5771e7f935bf25dea6/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjA5NCwicHVyIjoiYmxvYl9pZCJ9fQ==--8e33f23ee0af643d146e8f26f22eb7b9ecde1a93/image.png)
+
+I also worked on finishing all the wiering from yesterday, I tried to keep everything clean for de bugging later on. I was able to wire the relays to the RAMPS board and the fans and motor to the relays and the buck. I had to Dupont crimp a few more wiers and like always that was a pain to do. one of these days I will get it. 
+THis is what the final thing looks for now. I am going to check everything first tomorrow and then write code and test everything.
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjA5NSwicHVyIjoiYmxvYl9pZCJ9fQ==--544fb7a9733d7aa808a45bc39a27a50a000a7ede/image.png)
+
+
+  
+
