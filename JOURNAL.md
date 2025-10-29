@@ -486,3 +486,10 @@ So today the prints were done, so I got them off the build plate cleaned of all 
 https://github.com/APurbiya/DIY_Recycler/commit/f3e4fef83a198f3a0e7130261d2be380f6635ba6
   
 
+## 10/29/2025 - Early morning CAD  
+
+I woke up early today so I decided to get some cad done so I can print it later today. I increased the hole diameter of the motor gear and I designed a holder for the motor since it needs to be elevated a little. I have sliced both the models and will start the print in school today
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjQ5NCwicHVyIjoiYmxvYl9pZCJ9fQ==--c6b0d4f767e2386f194e5c361ec85d7df478b6bd/image.png)
+  
+
