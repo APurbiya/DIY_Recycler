@@ -478,3 +478,11 @@ THis is what the final thing looks for now. I am going to check everything first
 
   
 
+## 10/28/2025 - Print clean up and code  
+
+So today the prints were done, so I got them off the build plate cleaned of all the glue from the build plates, cleaned off the prints by removing all supports and the rafts and brims and skirts. I have not tried assembling any of the parts other than the gear for the motor and the hole is too small so I will add that on the list of things to fix in CAD. Since I had all the wiring done I wanted to write some code to test all the components. I first traced every wire to make sure nothing we going to short or anything like that. Then with all the pin numbers I started writing the code. Here is what the code does, the rotary encoder controls the speed of the stepper motor, the button on the encoder toggles which motor speed it controls. The button toggles heating on or off. The fan relay turns on when heating and the vibrator turns on when extruder screw is spinning. Everything works except the relay module for the 2 fans, I think the relay is broken cause the light turns on when high but I don't hear a click. I will have to replace it with a custom diy relay like the other one. I have not tried heating yet but I will do that tomorrow. IN the code the hardest part was the logic for the toggle motor speed and figuring out a naming convention for all the different parts.
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjQxOSwicHVyIjoiYmxvYl9pZCJ9fQ==--01baae620f723158981ebad40d62b9aac44e527c/image.png)
+
+https://github.com/APurbiya/DIY_Recycler/commit/f3e4fef83a198f3a0e7130261d2be380f6635ba6
+  
+
