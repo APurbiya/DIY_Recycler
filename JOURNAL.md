@@ -504,3 +504,13 @@ I got a whole lot done today, after slicing the parts this morning I was able to
 
   
 
+## 10/29/2025 9 PM - Fixing the shredder motor  
+
+Well the fuse came, I replaced it and tested it only to find out the controller is now broken. :( No worries I had a back up plan, I had a button that I was originaly going to use instead of the controller. But unfortunalely I did not plan in my cad for a hole for the button. So I started heating up a screwdriver on the stove and then poking holes in a circle until I could knock out the center and have a hol big enough for the button. Then I soldered some wiers to the motor and the button to make that part of the cuircit work. Once that was working I started testing things like the spooler motor only to find out the pin nums in my code were wrong so I fixed that by looking up the actual pin nums on the ramps documentation and then I realized my max speed was too slow so I increased that as well. I am very close to test this entire thing, I just need something to cover the back and close the front.
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjYyMCwicHVyIjoiYmxvYl9pZCJ9fQ==--d59fbb1b846b248ad94ed0006d26ea1f6a479ba3/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjYyMSwicHVyIjoiYmxvYl9pZCJ9fQ==--2239a3f84033f6f39652ca811c7aa4df64cdf855/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjYyMiwicHVyIjoiYmxvYl9pZCJ9fQ==--a8d490e2d6ac311f716b5ee5c4ded117ff77039d/image.png)
+
+
+  
+
