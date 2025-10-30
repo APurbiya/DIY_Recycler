@@ -486,10 +486,21 @@ So today the prints were done, so I got them off the build plate cleaned of all 
 https://github.com/APurbiya/DIY_Recycler/commit/f3e4fef83a198f3a0e7130261d2be380f6635ba6
   
 
-## 10/29/2025 - Early morning CAD  
+## 10/29/2025 7 AM - Early morning CAD  
 
 I woke up early today so I decided to get some cad done so I can print it later today. I increased the hole diameter of the motor gear and I designed a holder for the motor since it needs to be elevated a little. I have sliced both the models and will start the print in school today
 
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjQ5NCwicHVyIjoiYmxvYl9pZCJ9fQ==--c6b0d4f767e2386f194e5c361ec85d7df478b6bd/image.png)
+  
+
+## 10/29/2025 6 PM - Print Clean up, Assembly and Electronics  
+
+I got a whole lot done today, after slicing the parts this morning I was able to start the prints, once the prints were done I got it off the plate cleaned it up. For assembly I got all the printed parts in, the spooler gear and the stepper motor, the shredder trey, the extruder pipe, and even the shredder motor mount. After doing all of this I had to fix the relay. I made a second custom relay module and got it put into the frame and wiered up. Soldering was hard as such a awkward angle. Once I got that done I tested to make sure the fans were running, they were working. I wanted to fix the vibrational motor as it seems to be vibrating too fast. I tried swaping it for a smaller motor but it is not helping, so I need to think of something better. I also did a full heating and cooling test getting the extruder to 300deg c. it took almost 25min to get to that temp, I think the power supply or the ramps board are not powerfull enought but I have to deal with it now. I am almost ready to do my first extrusion just need to get the new fuse and put it in and then run the shredder.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjU4NiwicHVyIjoiYmxvYl9pZCJ9fQ==--c5fa69d427f3150a36f236c9a44bc0626880afe1/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjU4NywicHVyIjoiYmxvYl9pZCJ9fQ==--6de585a763b2a8999ab44ea37133750d9e2f69e3/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjU4OCwicHVyIjoiYmxvYl9pZCJ9fQ==--010749ba71aba76b0f1a31dc6438ae53768e4f20/image.png)
+
+
   
 
