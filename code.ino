@@ -4,9 +4,9 @@
 #define A_ENABLE_PIN  38   // E0 ENABLE
 
 // E1 stepper
-#define B_STEP_PIN    26   // E1 STEP
-#define B_DIR_PIN     28   // E1 DIR
-#define B_ENABLE_PIN  24   // E1 ENABLE
+#define B_STEP_PIN    60   // E1 STEP
+#define B_DIR_PIN     61   // E1 DIR
+#define B_ENABLE_PIN  56   // E1 ENABLE
 
 // Heater & sensor
 #define HEATER_PIN      10        // D10 = E0 heater MOSFET
@@ -62,7 +62,7 @@ bool stepStateE0 = false;
 bool stepStateE1 = false;
 
 const float SPS_MIN = 0.0f;
-const float SPS_MAX = 5000.0f;
+const float SPS_MAX = 8000.0f;
 const int   SPS_STEP = 50;
 
 // State
