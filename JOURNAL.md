@@ -514,3 +514,12 @@ Well the fuse came, I replaced it and tested it only to find out the controller 
 
   
 
+## 10/30/2025 - Sketching for laser  
+
+I want to make panels for the front and back of my project so its fully enclosed. To do that took the original skecth and copied it into a new sketch where I made a few changes of removing the lines and adding a spot for the usb printer cable. I am going to use magnets to attach everything together. 
+Since the H2D laser volume is small I split the sketch into 4 parts.
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjcxMiwicHVyIjoiYmxvYl9pZCJ9fQ==--cd8c24829ae630f6e683c5359aca63f13c240e8b/image.png)
+I will prep the laser cutter later today when I generate the paths in bambu suite I also want to add 2 qr codes that lead to the git hub and onshape. I am thinking about cutting the back panel out of wood and the front panel out of some sort of acrylic
+
+  
+
