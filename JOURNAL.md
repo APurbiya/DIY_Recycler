@@ -514,7 +514,7 @@ Well the fuse came, I replaced it and tested it only to find out the controller 
 
   
 
-## 10/30/2025 - Sketching for laser  
+## 10/30/2025 6 AM - Sketching for laser  
 
 I want to make panels for the front and back of my project so its fully enclosed. To do that took the original skecth and copied it into a new sketch where I made a few changes of removing the lines and adding a spot for the usb printer cable. I am going to use magnets to attach everything together. 
 Since the H2D laser volume is small I split the sketch into 4 parts.
@@ -522,4 +522,13 @@ Since the H2D laser volume is small I split the sketch into 4 parts.
 I will prep the laser cutter later today when I generate the paths in bambu suite I also want to add 2 qr codes that lead to the git hub and onshape. I am thinking about cutting the back panel out of wood and the front panel out of some sort of acrylic
 
   
+
+## 10/30/2025 6 PM - Laser Cutting + Assembly  
+
+I had the dxf files ready so in school I got the panels ready for cutting. I wanted to used yellow acrylic for the back and clear for the front, turns out that clear doesn't cut well on the H2D somy teacher gave me a hacksaw I got to work. As for the yellow that was super easy and was able to cut it off.I also used a deburring tool to smooth out some of the edges. Then at home I started by pealing the sheets, for some reason on the yellow the film came off really easily almost in one piece, on the clear it just wasn't working and I wanted to get everything off. Since I used the hacksaw on the clear the cuts wern't straight so glueing it was a strugle I got super glue all over my hands and had to resort to using tape. After all 8 pannels were joined I got some magnets to hold the plates up. It doesn't look the best but it looks as good as I could with the technologies I had available to me. I have excluded all times that the laser was running and only included time I working hands on.
+![PXL_20251031_004122455](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Njg2NywicHVyIjoiYmxvYl9pZCJ9fQ==--2b9cb7e19085f7c704aee34fa94c061d549a3625/PXL_20251031_004122455.jpg)
+![PXL_20251031_000857643](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Njg2OCwicHVyIjoiYmxvYl9pZCJ9fQ==--bff6989199350020caeb48fbc5a930aa3961c675/PXL_20251031_000857643.jpg)
+![PXL_20251031_004107946](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Njg3MCwicHVyIjoiYmxvYl9pZCJ9fQ==--4c954aa9c904c17ed3dd5d90db5d86977768ae1f/PXL_20251031_004107946.jpg)
+
+![PXL_20251031_004117937.MP](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Njg2OSwicHVyIjoiYmxvYl9pZCJ9fQ==--8d58c677e7381334b0b9f35379175bebe23c92b9/PXL_20251031_004117937.MP.jpg)  
 
