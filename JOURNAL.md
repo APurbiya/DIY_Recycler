@@ -544,3 +544,19 @@ Well, today was a bad day. I wanted to test all the systems including extrusion 
 
   
 
+## 11/1/2025 - Extruder Re-CAD  
+
+Since my old extruder had some problems I started working fixing the cad so it can work better. My old assembly had 2 27mm m3 stand offs and a 5mm plate and a 3mm plate for a total of 62mm for my new stack I cut some screws heads of so its only the threaded part and linked 2 sand off together 30mm and 27mm and then used a 5mm plate for a total of 62mm. Then I fixed the fan vent angel and size to work with this new design and then I had to redo the chute. I tried some thing completly different this time. While I was working on the chute I sliced and started the print for the 5mm plate it was only 18mins. It took me a while to get the sweep feature in onshape to work the way I wanted it to. Once I was happy with everything I made an assembly to see how everything looks. After that I removed and cleaned up the plate print then I emptied the Vat and cleaned it up to put clear resin in the tank to print the chute. I am printing it in clear so I can see what is going on. I sliced the model and started the print. Once the print was done I got it off the plate and cleaned up. Next I will put the assembly all together. I also beefed up the shredder so it does not crack/explode the next time.
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzUwNCwicHVyIjoiYmxvYl9pZCJ9fQ==--351d7c70d71e162961c5473b5830598ce9c894b2/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzUwNSwicHVyIjoiYmxvYl9pZCJ9fQ==--3f791711a39d906d101258bf906947d8b66d4ef2/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzUwNiwicHVyIjoiYmxvYl9pZCJ9fQ==--971698a7f60734be9f1e3cfb19a0a7fafac224d7/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzUwNywicHVyIjoiYmxvYl9pZCJ9fQ==--79cba00e98b768a39ce9f9366766c544c02ec283/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzUwOCwicHVyIjoiYmxvYl9pZCJ9fQ==--f18ae314ae271442c3569ae40ebd9f03091c7eda/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzUwOSwicHVyIjoiYmxvYl9pZCJ9fQ==--cd7d613723e5298b04ca0e49a0b38c40cf2e23e6/image.png)
+
+
+
+
+
+  
+
