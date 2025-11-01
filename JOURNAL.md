@@ -532,3 +532,15 @@ I had the dxf files ready so in school I got the panels ready for cutting. I wan
 
 ![PXL_20251031_004117937.MP](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Njg2OSwicHVyIjoiYmxvYl9pZCJ9fQ==--8d58c677e7381334b0b9f35379175bebe23c92b9/PXL_20251031_004117937.MP.jpg)  
 
+## 10/31/2025 - 1 step farward 4 steps back  
+
+Well, today was a bad day. I wanted to test all the systems including extrusion I started by shredding some of the poop. After some time of doing that the shredder breakes in a really bad way. I am going to need to beef up that part and re print it. With the little that I had broken down I tried extruding. it took a while to heat up after that I started spining the motor and it did not seem to be taking anything down, so I fliped the wiers stuff was moving so I thought it was working turns out it was still spining out the wrong way, so I made a change in the code so if I hold the encoder button it reverses the direction of the motor. Now it was spining the right way but then it did not seem to be extruding so I opened it up this got the filament everywhere, I spun it by hand for some time and I got a little bit of extrusion so I thought it was working so I put it all back together and then again nothing, so now I was really confused. I take it apart again everything seems okay. while trying to feed more scrps in I realized my chute is not angeled enough to let gravity to do its thing so I need to redesign that as well. I think I need to go back to the drawingn board and think about what I am doing wrong. I also had to cut the chute with a dremel because I could not see anything inside.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzIxMiwicHVyIjoiYmxvYl9pZCJ9fQ==--76367ae7cd01bef2dc68ea8f1238eb196f9d410b/image.png)
+
+![PXL_20251031_210720875](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzIxMywicHVyIjoiYmxvYl9pZCJ9fQ==--d3c4a26fb1e30b72ac8084ea3e0b84a9874c7f89/PXL_20251031_210720875.jpg)
+![PXL_20251031_210308155](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzIxNCwicHVyIjoiYmxvYl9pZCJ9fQ==--21c43d262bc951607d2be5db421819208163df75/PXL_20251031_210308155.jpg)![PXL_20251031_212013088](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzIxNywicHVyIjoiYmxvYl9pZCJ9fQ==--aca0742edefdbecb25c2c855db73a8b5175ad03f/PXL_20251031_212013088.jpg)
+![PXL_20251031_215713263](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzIxNSwicHVyIjoiYmxvYl9pZCJ9fQ==--a006dcf3309e509124ecfa36c2ed53682ba5db0a/PXL_20251031_215713263.jpg)![PXL_20251031_214938171.MP](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzIxNiwicHVyIjoiYmxvYl9pZCJ9fQ==--e138b35012774aa1892dfa3895defea8f509c8e2/PXL_20251031_214938171.MP.jpg)
+
+  
+
