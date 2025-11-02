@@ -4,9 +4,9 @@
 #define A_ENABLE_PIN  38   // E0 ENABLE
 
 // E1 stepper (these match your current mapping; change if your board uses 36/34/30)
-#define B_STEP_PIN    60   // E1 STEP  
-#define B_DIR_PIN     61   // E1 DIR   
-#define B_ENABLE_PIN  56   // E1 EN    
+#define B_STEP_PIN    60   // E1 STEP
+#define B_DIR_PIN     61   // E1 DIR
+#define B_ENABLE_PIN  56   // E1 EN
 
 // Heater & sensor
 #define HEATER_PIN      10        // D10 = E0 heater MOSFET
@@ -32,10 +32,11 @@
 #define RELAY_OFF LOW
 
 // ================== Temperature & safety ==================
-float EXTRUDER_MIN_C = 250.0f;          // start heating below this
-float EXTRUDER_MAX_C = 280.0f;          // stop heating at/above this
-const float COOL_RELAYFAN_OFF_C = 90.0f;
-const float MAX_SAFE_C = 290.0f;        //  keep below 300
+float EXTRUDER_MIN_C = 230.0f;          // start heating below this
+float EXTRUDER_MAX_C = 250.0f;          // stop heating at/above this
+const float COOL_RELAYFAN_OFF_C = 120.0f;
+const float MAX_SAFE_C = 260.0f;        // keep below 300
+const float MIN_EXTRUDE_C = 160.0f;     // E0 won't spin below this
 const unsigned long READ_INTERVAL_MS = 200;
 
 // Thermistor model (100k NTC, B3950, 4.7k pull-up)
@@ -45,12 +46,12 @@ const float T0_K = 273.15f + 25.0f;
 const float BETA = 3950.0f;
 
 // Simple thermal-runaway guard
-const float TR_MIN_RISE_C = 2.0f;       // must rise at least this much
+const float TR_MIN_RISE_C = 2.0f;         // must rise at least this much
 const unsigned long TR_WINDOW_MS = 20000; // within 20s of heater turning on
 
 // Fan PWM levels
 const uint8_t FAN12_IDLE_PWM   = (uint8_t)(0.15 * 255); // 15%
-const uint8_t FAN12_ACTIVE_PWM = (uint8_t)(0.60 * 255); // 60%
+const uint8_t FAN12_ACTIVE_PWM = (uint8_t)(0.20 * 255); // 20%
 
 // ================== Stepper control ==================
 volatile long encValue = 0;
@@ -65,8 +66,8 @@ float speedE1_sps  = 0;
 
 // Accel (slew) parameters
 const float SPS_MIN  = 0.0f;
-const float SPS_MAX  = 16000.0f;       // keep reasonable with digitalWrite()
-const float ACCEL_SPS_PER_S = 8000.0f; // how fast we ramp (steps/s per second)
+const float SPS_MAX  = 8000.0f;          // keep reasonable with digitalWrite()
+const float ACCEL_SPS_PER_S = 8000.0f;   // how fast we ramp (steps/s per second)
 
 // Step timing
 unsigned long nextStepE0_us = 0;
@@ -88,6 +89,7 @@ bool heaterOn = false;
 bool heatRequested = false;
 bool relayFanLatched = false;
 float lastTempC = 25;
+bool extrudeTempOK = false;  // NEW: E0 motion allowed only if true
 
 // Runaway guard tracking
 bool tr_armed = false;
@@ -182,10 +184,12 @@ void serviceSteppers() {
   applyDirPins();   // keep pins synced with flags
   unsigned long now = micros();
 
-  // E0
-  if (speedE0_sps > 1.0f) {
+  // --- E0 (gated by temperature) ---
+  float e0_run_sps = extrudeTempOK ? speedE0_sps : 0.0f;
+
+  if (e0_run_sps > 1.0f) {
     digitalWrite(A_ENABLE_PIN, LOW);
-    unsigned long interval = (unsigned long)(1000000.0f / speedE0_sps / 2.0f);
+    unsigned long interval = (unsigned long)(1000000.0f / e0_run_sps / 2.0f);
     if (now >= nextStepE0_us) {
       stepStateE0 = !stepStateE0;
       digitalWrite(A_STEP_PIN, stepStateE0);
@@ -196,7 +200,7 @@ void serviceSteppers() {
     digitalWrite(A_STEP_PIN, LOW);
   }
 
-  // E1
+  // --- E1 (always allowed) ---
   if (speedE1_sps > 1.0f) {
     digitalWrite(B_ENABLE_PIN, LOW);
     unsigned long interval = (unsigned long)(1000000.0f / speedE1_sps / 2.0f);
@@ -244,7 +248,7 @@ void setup() {
   delay(50);
   lastReadMs = millis();
 
-  Serial.println("Ready. HEAT button toggles heating. Encoder SW: short=select motor, long=reverse dir.");
+  Serial.println("Ready. HEAT button toggles heating. Encoder SW: short=select motor, long=reverse dir. E0 gated <160C.");
 }
 
 // ================== Loop ==================
@@ -315,20 +319,23 @@ void loop() {
     // Apply heater MOSFET
     digitalWrite(HEATER_PIN, heaterOn ? HIGH : LOW);
 
+    // Update extruder temp gate
+    extrudeTempOK = (lastTempC >= MIN_EXTRUDE_C);
+
     // Relay FAN logic (latched until cool)
     if (heatRequested || heaterOn) relayFanLatched = true;
     if (!heatRequested && !heaterOn && lastTempC < COOL_RELAYFAN_OFF_C) relayFanLatched = false;
     digitalWrite(RELAY_FAN_PIN, relayFanLatched ? RELAY_ON : RELAY_OFF);
 
-    // Relay VIBRATOR logic (follows any stepper spinning)
-    bool anySpin = (speedE0_sps > 1.0f) || (speedE1_sps > 1.0f);
+    // Relay VIBRATOR logic (follows actual motion)
+    bool anySpin = ((extrudeTempOK ? speedE0_sps : 0.0f) > 1.0f) || (speedE1_sps > 1.0f);
     digitalWrite(RELAY_VIBRATOR_PIN, anySpin ? RELAY_ON : RELAY_OFF);
 
     // 5V fans follow actual heater state
     digitalWrite(FAN5V_1_PIN, heaterOn ? HIGH : LOW);
     digitalWrite(FAN5V_2_PIN, heaterOn ? HIGH : LOW);
 
-    // 12V fan PWM: 60% if heating or spinning; else 15%
+    // 12V fan PWM: 20% if heating or spinning; else 15%
     uint8_t pwm = (heaterOn || anySpin) ? FAN12_ACTIVE_PWM : FAN12_IDLE_PWM;
     analogWrite(FAN12_PWM_PIN, pwm);
 
@@ -336,6 +343,7 @@ void loop() {
     Serial.print("T="); Serial.print(lastTempC, 1);
     Serial.print(" | heatReq="); Serial.print(heatRequested);
     Serial.print(" | heaterOn="); Serial.print(heaterOn);
+    Serial.print(" | GateE0="); Serial.print(extrudeTempOK ? "OK" : "COLD");
     Serial.print(" | E0="); Serial.print(speedE0_sps, 0);
     Serial.print(" | E1="); Serial.print(speedE1_sps, 0);
     Serial.print(" | DirE0="); Serial.print(dirE0_forward ? "F" : "R");
