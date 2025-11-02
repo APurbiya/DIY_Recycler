@@ -544,7 +544,7 @@ Well, today was a bad day. I wanted to test all the systems including extrusion 
 
   
 
-## 11/1/2025 - Extruder Re-CAD  
+## 11/1/2025 12 PM - Extruder Re-CAD  
 
 Since my old extruder had some problems I started working fixing the cad so it can work better. My old assembly had 2 27mm m3 stand offs and a 5mm plate and a 3mm plate for a total of 62mm for my new stack I cut some screws heads of so its only the threaded part and linked 2 sand off together 30mm and 27mm and then used a 5mm plate for a total of 62mm. Then I fixed the fan vent angel and size to work with this new design and then I had to redo the chute. I tried some thing completly different this time. While I was working on the chute I sliced and started the print for the 5mm plate it was only 18mins. It took me a while to get the sweep feature in onshape to work the way I wanted it to. Once I was happy with everything I made an assembly to see how everything looks. After that I removed and cleaned up the plate print then I emptied the Vat and cleaned it up to put clear resin in the tank to print the chute. I am printing it in clear so I can see what is going on. I sliced the model and started the print. Once the print was done I got it off the plate and cleaned up. Next I will put the assembly all together. I also beefed up the shredder so it does not crack/explode the next time.
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzUwNCwicHVyIjoiYmxvYl9pZCJ9fQ==--351d7c70d71e162961c5473b5830598ce9c894b2/image.png)
@@ -558,5 +558,15 @@ Since my old extruder had some problems I started working fixing the cad so it c
 
 
 
+  
+
+## 11/1/2025 5 PM - Extruder Assembly V4 and testing  
+
+I got the entire extruder put back together with the new part. Now it was time to test it. While the block was heating up I manually cut up some filament into pellet sized chunks the I could put down the chute to test. In around 30mins I had enough pellets and the nozzle had heated that I could start the test. I pull all the pellets in an nothing came out :( I thought this might be due to the slow motor rpm so I let is keep going for a while. When nothing happened I took it apart nothing looked strange but none of the new chucks had made it down. So I removed the chute and started testing I went back a forth with the different directions of rotation to finally realize I might have been running it wrong this entire time. So now after waiting a while it seemed tube working but nothing was coming out so I opened it again looks like I did not wait long enough. So I cleaned everything back up and put everything back together. I also put the vibration motor back on to help with the pellet distribution. Hopefully the next test I do it gives me some good extrusions.
+
+![PXL_20251101_200138990](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzU5OSwicHVyIjoiYmxvYl9pZCJ9fQ==--c2a01e7b873fdd333ce0cf6393df68f34ca89531/PXL_20251101_200138990.jpg)
+![PXL_20251101_221112402](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzYwMSwicHVyIjoiYmxvYl9pZCJ9fQ==--50dece66802362c9eae7ca5ea6146912f7c492f6/PXL_20251101_221112402.jpg)![PXL_20251101_225326286](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzYwNCwicHVyIjoiYmxvYl9pZCJ9fQ==--ee8286209e90f58798d800cc0cd4b64212ced872/PXL_20251101_225326286.jpg)
+![PXL_20251101_214754338](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzYwMiwicHVyIjoiYmxvYl9pZCJ9fQ==--88ffc2dea6ab276fc861b3dca205edad24fdd6cc/PXL_20251101_214754338.jpg)
+![PXL_20251101_213404852](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzYwMCwicHVyIjoiYmxvYl9pZCJ9fQ==--faf53e5ef265d3059ee590b7a69c82bd662f2620/PXL_20251101_213404852.jpg)![PXL_20251101_234208048](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzYwMywicHVyIjoiYmxvYl9pZCJ9fQ==--9949c3bb1405eb3d7b7d6d480b90b70e11bae25e/PXL_20251101_234208048.jpg)
   
 
