@@ -570,7 +570,7 @@ I got the entire extruder put back together with the new part. Now it was time t
 ![PXL_20251101_213404852](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzYwMCwicHVyIjoiYmxvYl9pZCJ9fQ==--faf53e5ef265d3059ee590b7a69c82bd662f2620/PXL_20251101_213404852.jpg)![PXL_20251101_234208048](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzYwMywicHVyIjoiYmxvYl9pZCJ9fQ==--9949c3bb1405eb3d7b7d6d480b90b70e11bae25e/PXL_20251101_234208048.jpg)
   
 
-## 11/2/2025 - It Works! (Kinda)  
+## 11/2/2025 1 PM - It Works! (Kinda)  
 
 I started today of by removing ot jumpers under the stepper driver on the ramps board to get better rmps, but I ended up putting 2 back in. So I have slightly better RPM. 
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzg4MywicHVyIjoiYmxvYl9pZCJ9fQ==--28d5cd8f78fbe869861bbb4ff0a941a65fd5b3a9/image.png)
@@ -579,5 +579,12 @@ Then I tried just doing an extrusion so I cut up some filament while the block h
 So I put everything back together and this time I put pellets in there one by one. This is when I realized that the heating cartraige was way too high up it needed to be lower. I moved it down and then ran the test again. This time I changed some of the temps and fans speeds to help. I also made sure the vibrator motor was running the way it should be. I waited a really long time with this set up and nothing seems to be happening but then I saw some stuff was comming out. ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzg4NywicHVyIjoiYmxvYl9pZCJ9fQ==--5ef4711d78ccb0e1977bde52cc141dc32fbb465c/image.png) So I let it do its thing but then nothing more came out :( So I opened it up again and this was the first time the inside looked the way it should have. So I just didn't wait long enough. I think the vibrator motor should also be on PWM so I can control its speed some how. But I think what I did today was productive. Tommorow I am going to print the shredder parts in school and then I can do a better test hoping for some better results. I think I am headed in the right direction as of right now.
 
 I also made some code changes to make everything safer like blocking the motor from spinning when the temp is too low.
+  
+
+## 11/2/2025 5 PM - Electronics ++  
+
+I wanted to change the relay to a motor driver, so thats exactly what I did, I had to change up a bunch of the wiring to make this work. Also the code did not seems as straight forward as it was. Whatever pin I tried for the Enable pin turned out to be a non PWM pin. Finaly I had the full code working with the new hardware. Now I am ready to run the extruder and see if stuff comes out.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzkzMCwicHVyIjoiYmxvYl9pZCJ9fQ==--5eb67218bfa56f20c301b2fd4d51558f2b84001a/image.png)
   
 
