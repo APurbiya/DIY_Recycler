@@ -1,3 +1,6 @@
+// ====== USER SETTINGS ======
+const uint8_t VIB_SPEED_PERCENT = 50;    // 0..100% (set 100 for full power)
+
 // ====== RAMPS pins ======
 #define A_STEP_PIN    54   // E0 STEP
 #define A_DIR_PIN     55   // E0 DIR
@@ -18,14 +21,19 @@
 #define FAN12_PWM_PIN 9           // D9 = 12V fan MOSFET (PWM)
 
 // Relays (normally open → active-HIGH)
-#define RELAY_VIBRATOR_PIN 18     // ON when any stepper spins
-#define RELAY_FAN_PIN       15    // ON when heating (latched until <90°C)
+#define RELAY_VIBRATOR_PIN 18     // kept as indicator/compat; follows E0 motion
+#define RELAY_FAN_PIN       15    // ON when heating (latched until <cool temp)
 
 // Buttons / Encoder
 #define HEAT_BUTTON_PIN A15
 #define ENC_CLK 31
 #define ENC_DT  33
 #define ENC_SW  35
+
+// Vibrator motor driver pins (H-bridge / L298N-style)
+#define VIB_MOTOR_A 16            // IN1 (direction A)
+#define VIB_MOTOR_B 17            // IN2 (direction B)
+#define VIB_MOTOR_EN 5            // ENA (PWM speed control on D2)
 
 // Relay logic for NO type (HIGH = ON)
 #define RELAY_ON  HIGH
@@ -36,7 +44,7 @@ float EXTRUDER_MIN_C = 230.0f;          // start heating below this
 float EXTRUDER_MAX_C = 250.0f;          // stop heating at/above this
 const float COOL_RELAYFAN_OFF_C = 120.0f;
 const float MAX_SAFE_C = 260.0f;        // keep below 300
-const float MIN_EXTRUDE_C = 160.0f;     // E0 won't spin below this
+const float MIN_EXTRUDE_C = 20.0f;     // E0 won't spin below this
 const unsigned long READ_INTERVAL_MS = 200;
 
 // Thermistor model (100k NTC, B3950, 4.7k pull-up)
@@ -89,12 +97,19 @@ bool heaterOn = false;
 bool heatRequested = false;
 bool relayFanLatched = false;
 float lastTempC = 25;
-bool extrudeTempOK = false;  // NEW: E0 motion allowed only if true
+bool extrudeTempOK = false;  // E0 motion allowed only if true
 
 // Runaway guard tracking
 bool tr_armed = false;
 unsigned long tr_start_ms = 0;
 float tr_start_temp = 0;
+
+// ===== Helper: map 0..100% to 0..255 PWM =====
+inline uint8_t pctToPwm(uint8_t pct) {
+  if (pct > 100) pct = 100;
+  return (uint8_t)((pct * 255UL) / 100UL);
+}
+const uint8_t VIB_PWM = pctToPwm(VIB_SPEED_PERCENT);
 
 // ================== Debounce helpers ==================
 bool readButtonDebounced(uint8_t pin) {
@@ -238,6 +253,14 @@ void setup() {
   pinMode(RELAY_VIBRATOR_PIN, OUTPUT); digitalWrite(RELAY_VIBRATOR_PIN, RELAY_OFF);
   pinMode(RELAY_FAN_PIN, OUTPUT);      digitalWrite(RELAY_FAN_PIN, RELAY_OFF);
 
+  // Vibrator motor driver
+  pinMode(VIB_MOTOR_A, OUTPUT);
+  pinMode(VIB_MOTOR_B, OUTPUT);
+  pinMode(VIB_MOTOR_EN, OUTPUT);
+  analogWrite(VIB_MOTOR_EN, 0);
+  digitalWrite(VIB_MOTOR_A, LOW);
+  digitalWrite(VIB_MOTOR_B, LOW);
+
   // Buttons / Encoder
   pinMode(HEAT_BUTTON_PIN, INPUT_PULLUP);
   pinMode(ENC_CLK, INPUT_PULLUP);
@@ -248,7 +271,7 @@ void setup() {
   delay(50);
   lastReadMs = millis();
 
-  Serial.println("Ready. HEAT button toggles heating. Encoder SW: short=select motor, long=reverse dir. E0 gated <160C.");
+  Serial.println("Ready. HEAT toggles heating. Encoder SW: short=select motor, long=reverse dir. E0 gated <160C. Vibrator follows E0.");
 }
 
 // ================== Loop ==================
@@ -322,22 +345,37 @@ void loop() {
     // Update extruder temp gate
     extrudeTempOK = (lastTempC >= MIN_EXTRUDE_C);
 
+    // 5V fans follow actual heater state
+    digitalWrite(FAN5V_1_PIN, heaterOn ? HIGH : LOW);
+    digitalWrite(FAN5V_2_PIN, heaterOn ? HIGH : LOW);
+
+    // Determine motion states
+    bool e0ActuallySpinning = (extrudeTempOK ? speedE0_sps : 0.0f) > 1.0f;
+    bool anySpin = e0ActuallySpinning || (speedE1_sps > 1.0f);
+
+    // 12V fan PWM: 20% if heating or spinning; else 15%
+    uint8_t pwm12 = (heaterOn || anySpin) ? FAN12_ACTIVE_PWM : FAN12_IDLE_PWM;
+    analogWrite(FAN12_PWM_PIN, pwm12);
+
     // Relay FAN logic (latched until cool)
     if (heatRequested || heaterOn) relayFanLatched = true;
     if (!heatRequested && !heaterOn && lastTempC < COOL_RELAYFAN_OFF_C) relayFanLatched = false;
     digitalWrite(RELAY_FAN_PIN, relayFanLatched ? RELAY_ON : RELAY_OFF);
 
-    // Relay VIBRATOR logic (follows actual motion)
-    bool anySpin = ((extrudeTempOK ? speedE0_sps : 0.0f) > 1.0f) || (speedE1_sps > 1.0f);
-    digitalWrite(RELAY_VIBRATOR_PIN, anySpin ? RELAY_ON : RELAY_OFF);
+    // Relay VIBRATOR (indicator/compat): follows E0 actual motion
+    digitalWrite(RELAY_VIBRATOR_PIN, e0ActuallySpinning ? RELAY_ON : RELAY_OFF);
 
-    // 5V fans follow actual heater state
-    digitalWrite(FAN5V_1_PIN, heaterOn ? HIGH : LOW);
-    digitalWrite(FAN5V_2_PIN, heaterOn ? HIGH : LOW);
-
-    // 12V fan PWM: 20% if heating or spinning; else 15%
-    uint8_t pwm = (heaterOn || anySpin) ? FAN12_ACTIVE_PWM : FAN12_IDLE_PWM;
-    analogWrite(FAN12_PWM_PIN, pwm);
+    // ==== Vibrator motor driver follows E0 only ====
+    if (e0ActuallySpinning) {
+      // Direction fixed FWD (swap if needed)
+      digitalWrite(VIB_MOTOR_A, HIGH);
+      digitalWrite(VIB_MOTOR_B, LOW);
+      analogWrite(VIB_MOTOR_EN, VIB_PWM);   // run at configured % speed
+    } else {
+      analogWrite(VIB_MOTOR_EN, 0);
+      digitalWrite(VIB_MOTOR_A, LOW);
+      digitalWrite(VIB_MOTOR_B, LOW);
+    }
 
     // Debug
     Serial.print("T="); Serial.print(lastTempC, 1);
@@ -346,10 +384,8 @@ void loop() {
     Serial.print(" | GateE0="); Serial.print(extrudeTempOK ? "OK" : "COLD");
     Serial.print(" | E0="); Serial.print(speedE0_sps, 0);
     Serial.print(" | E1="); Serial.print(speedE1_sps, 0);
-    Serial.print(" | DirE0="); Serial.print(dirE0_forward ? "F" : "R");
-    Serial.print(" | DirE1="); Serial.print(dirE1_forward ? "F" : "R");
-    Serial.print(" | VibRelay="); Serial.print(anySpin);
-    Serial.print(" | FanRelay="); Serial.print(relayFanLatched);
-    Serial.print(" | PWM="); Serial.println(pwm);
+    Serial.print(" | Vib(E0)="); Serial.print(e0ActuallySpinning ? "ON" : "OFF");
+    Serial.print(" | PWM12="); Serial.print(pwm12);
+    Serial.print(" | VibPWM="); Serial.println(VIB_PWM);
   }
 }
