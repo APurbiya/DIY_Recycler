@@ -1,5 +1,5 @@
 // ====== USER SETTINGS ======
-const uint8_t VIB_SPEED_PERCENT = 50;    // 0..100% (set 100 for full power)
+const uint8_t VIB_SPEED_PERCENT = 80;    // 0..100% (set 100 for full power)
 
 // ====== RAMPS pins ======
 #define A_STEP_PIN    54   // E0 STEP
@@ -40,10 +40,10 @@ const uint8_t VIB_SPEED_PERCENT = 50;    // 0..100% (set 100 for full power)
 #define RELAY_OFF LOW
 
 // ================== Temperature & safety ==================
-float EXTRUDER_MIN_C = 230.0f;          // start heating below this
-float EXTRUDER_MAX_C = 250.0f;          // stop heating at/above this
+float EXTRUDER_MIN_C = 260.0f;          // start heating below this
+float EXTRUDER_MAX_C = 290.0f;          // stop heating at/above this
 const float COOL_RELAYFAN_OFF_C = 120.0f;
-const float MAX_SAFE_C = 260.0f;        // keep below 300
+const float MAX_SAFE_C = 300.0f;        // keep below 300
 const float MIN_EXTRUDE_C = 20.0f;     // E0 won't spin below this
 const unsigned long READ_INTERVAL_MS = 200;
 
