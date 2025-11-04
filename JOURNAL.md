@@ -588,3 +588,19 @@ I wanted to change the relay to a motor driver, so thats exactly what I did, I h
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzkzMCwicHVyIjoiYmxvYl9pZCJ9fQ==--5eb67218bfa56f20c301b2fd4d51558f2b84001a/image.png)
   
 
+## 11/3/2025 - More tuning  
+
+I started today by watching a few videos and reading some papers to understand and learn about the screw system and if I was doing it correctly. Based on what I found I was doing most things correctly.
+
+https://www.youtube.com/watch?v=BT04glGDjB4
+https://www.aniwaa.com/guide/3d-printers/guide-to-pellet-additive-manufacturing/
+
+So after that I decided to drill a 0.8mm nozzel to a size closer to 1.75mm I went with a number 52 drill but which is around 1.60mm which should be good. I did this on the lathe at school because I wanted to make sure the hole was staight. I put the nozzel in the collet and then put the drill in the side stock and then pushed it in. I had to swap the chuck on the lathe from a collet to the self-centering chuck to drill the hole properly. I also used some cutting oil to make sure nothing bad happens and then filed it to make sure it was not sharp.  Then at home I heated the block to 200deg c and then swap the nozzel. Then this time I cut down white filament so I could see the transition. I started feeding it but nothing seemed to be happening for the first 20-30min. I shaked the extruder and then slowly stuff started comming out. It started with thin brown color, then after a long time it became thick and closer to white and then finaly it was looking good. I did have to increase the extruder temp back to a high number closer to 300deg c. I also made some very tiny chnages to some numbers in the code to help tune the extrusion. This is where I ran out of the chopped filament so I had to stop. but I am getting close. Tomorrow I will probably print the shredder and work on that. After I ran out of pellet I took the thing apart to see if everything inside looked okay which now it does.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODIzMiwicHVyIjoiYmxvYl9pZCJ9fQ==--75828bacc8c26e97421932c6e917a6f5836bc1d1/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODIzMywicHVyIjoiYmxvYl9pZCJ9fQ==--4622dd4fb7492db1871fd5e72a5eb12a93a9d730/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODIzNCwicHVyIjoiYmxvYl9pZCJ9fQ==--bde4ece1e7a43bad896d25cab8354b61cd656f60/image.png)
+
+
+  
+
