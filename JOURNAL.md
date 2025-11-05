@@ -604,3 +604,15 @@ So after that I decided to drill a 0.8mm nozzel to a size closer to 1.75mm I wen
 
   
 
+## 11/4/2025 - Fixing the shredder  
+
+Since I cracked the old shredder and I beefed it up earlier I decided to print it out. So I sliced it and this time I tired something different I tried out some support interface. Once the print was done I removed it and clean up was a pain in the the nut slot, I just crushed out as many supports I could. The next challeneg was getting the motor out I had put it in a way that it would not come out. I had to break a few things and evern ripped one of the wiers out. I put everyuthing back together then soldered the wier back in place. Then the hard part of adjusting the screws on the ruler to get it to cut just right. I spent a good amount of time getting it to shred just right. After that just did some more tests and I should be ready to go back to tuning the extruder.
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODQ3NSwicHVyIjoiYmxvYl9pZCJ9fQ==--35476f449e942bab8a0548c3bfeeea62041dc387/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODQ3NiwicHVyIjoiYmxvYl9pZCJ9fQ==--e7000cebe8c463891b7fb3dfb626b57c4f0869b1/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODQ3NywicHVyIjoiYmxvYl9pZCJ9fQ==--d4ba9ca7376aa62a26959af0ccd510b28e1b8eb9/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODQ3OCwicHVyIjoiYmxvYl9pZCJ9fQ==--b9ebe4a54d20b9ef81a274d2e915b602be4dd453/image.png)
+
+
+
+  
+
