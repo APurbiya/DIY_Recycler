@@ -616,3 +616,15 @@ Since I cracked the old shredder and I beefed it up earlier I decided to print i
 
   
 
+## 11/5/2025 - Tuning and Testing  
+
+Today, first I put the extruder back together as I left it as is last time I took it apart
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODc3NSwicHVyIjoiYmxvYl9pZCJ9fQ==--e34f693c23670f7ce953f1e47028e518149b865b/image.png) Then I removed one more jumper from the ramps board to get slightly higher rpm as last time I was just maxing it out. ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODc3NiwicHVyIjoiYmxvYl9pZCJ9fQ==--957ddd14b2265aff214be412a059bf7ff0c0c943/image.png). Once I got everything put back together I was ready to start testing. ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODc3NywicHVyIjoiYmxvYl9pZCJ9fQ==--49968314de251aa74044f36415a49c9a02a42141/image.png) I was hoping to see some better extrusions today so I had dried out the filament over night. as the block heated up I chopped up the filament. And then Started extruding. Fot this test I want to finish everything I put into the chute so it took longer. at first it looked like it was pooping out little drops and after that I did getting some more consistent extrusions. Sadly I emptied the entire top and only got this much. I think the next test I do I want to run some of the shredded filament and I also need to reduce the temp becuase it looks like the filament it buring up.
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODc3OCwicHVyIjoiYmxvYl9pZCJ9fQ==--570484dc78e81b60303fb264fa5ab388c1147288/image.png)
+
+I am headed in the right direction just need to keep going. During the test I did have thermal runaway twice so I need to figure out a way to fix that issue, and maybe add some idicator LEDs. I also noticed that the stepper motor was getting really hot and had to monitor that closly, maybe a heat sink on the stepper motor will help.
+
+
+
+  
+
