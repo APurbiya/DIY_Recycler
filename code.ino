@@ -1,12 +1,25 @@
 // ====== USER SETTINGS ======
 const uint8_t VIB_SPEED_PERCENT = 80;    // 0..100% (set 100 for full power)
+// ================== Temperature & safety ==================
+float EXTRUDER_MIN_C = 240.0f;          // start heating below this
+float EXTRUDER_MAX_C = 260.0f;          // stop heating at/above this
+const float COOL_RELAYFAN_OFF_C = 120.0f;
+const float MAX_SAFE_C = 300.0f;        // keep below 300
+const float MIN_EXTRUDE_C = 160.0f;     // E0 won't spin below this
+
+// Fan PWM levels
+const uint8_t FAN12_IDLE_PWM   = (uint8_t)(0.15 * 255); // 15%
+const uint8_t FAN12_ACTIVE_PWM = (uint8_t)(0.20 * 255); // 20%
+
+const float MAX_E0_SPS = 2400.0f;  // <-- Extruder cap
+const float MAX_E1_SPS = 6000.0f;  // <-- Spooler cap
 
 // ====== RAMPS pins ======
 #define A_STEP_PIN    54   // E0 STEP
 #define A_DIR_PIN     55   // E0 DIR
 #define A_ENABLE_PIN  38   // E0 ENABLE
 
-// E1 stepper (these match your current mapping; change if your board uses 36/34/30)
+// E1 stepper
 #define B_STEP_PIN    60   // E1 STEP
 #define B_DIR_PIN     61   // E1 DIR
 #define B_ENABLE_PIN  56   // E1 EN
@@ -33,33 +46,22 @@ const uint8_t VIB_SPEED_PERCENT = 80;    // 0..100% (set 100 for full power)
 // Vibrator motor driver pins (H-bridge / L298N-style)
 #define VIB_MOTOR_A 16            // IN1 (direction A)
 #define VIB_MOTOR_B 17            // IN2 (direction B)
-#define VIB_MOTOR_EN 5            // ENA (PWM speed control on D2)
+#define VIB_MOTOR_EN 5            // ENA (PWM speed control)
 
 // Relay logic for NO type (HIGH = ON)
 #define RELAY_ON  HIGH
 #define RELAY_OFF LOW
-
-// ================== Temperature & safety ==================
-float EXTRUDER_MIN_C = 260.0f;          // start heating below this
-float EXTRUDER_MAX_C = 290.0f;          // stop heating at/above this
-const float COOL_RELAYFAN_OFF_C = 120.0f;
-const float MAX_SAFE_C = 300.0f;        // keep below 300
-const float MIN_EXTRUDE_C = 20.0f;     // E0 won't spin below this
-const unsigned long READ_INTERVAL_MS = 200;
 
 // Thermistor model (100k NTC, B3950, 4.7k pull-up)
 const float R_SERIES = 4700.0f;
 const float R0 = 100000.0f;
 const float T0_K = 273.15f + 25.0f;
 const float BETA = 3950.0f;
+const unsigned long READ_INTERVAL_MS = 200;
 
 // Simple thermal-runaway guard
-const float TR_MIN_RISE_C = 2.0f;         // must rise at least this much
+const float TR_MIN_RISE_C = 1.0f;         // must rise at least this much
 const unsigned long TR_WINDOW_MS = 20000; // within 20s of heater turning on
-
-// Fan PWM levels
-const uint8_t FAN12_IDLE_PWM   = (uint8_t)(0.15 * 255); // 15%
-const uint8_t FAN12_ACTIVE_PWM = (uint8_t)(0.20 * 255); // 20%
 
 // ================== Stepper control ==================
 volatile long encValue = 0;
@@ -74,7 +76,9 @@ float speedE1_sps  = 0;
 
 // Accel (slew) parameters
 const float SPS_MIN  = 0.0f;
-const float SPS_MAX  = 8000.0f;          // keep reasonable with digitalWrite()
+// NOTE: replaced single max with per-motor maxes:
+const float MAX_E0_SPS = 2400.0f;  // <-- Extruder cap
+const float MAX_E1_SPS = 6000.0f;  // <-- Spooler cap
 const float ACCEL_SPS_PER_S = 8000.0f;   // how fast we ramp (steps/s per second)
 
 // Step timing
@@ -140,9 +144,11 @@ void handleEncoder() {
   if (clkState != lastClk) {
     if (digitalRead(ENC_DT) != clkState) encValue++; else encValue--;
     if (activeMotor == 0) {
-      targetE0_sps = constrain(targetE0_sps + (encValue > 0 ? 50 : -50), SPS_MIN, SPS_MAX);
+      // --- cap E0 target at 2400 sps ---
+      targetE0_sps = constrain(targetE0_sps + (encValue > 0 ? 50 : -50), SPS_MIN, MAX_E0_SPS);
     } else {
-      targetE1_sps = constrain(targetE1_sps + (encValue > 0 ? 50 : -50), SPS_MIN, SPS_MAX);
+      // --- cap E1 target at 6000 sps ---
+      targetE1_sps = constrain(targetE1_sps + (encValue > 0 ? 50 : -50), SPS_MIN, MAX_E1_SPS);
     }
     encValue = 0;
   }
@@ -186,12 +192,18 @@ void updateSpeedSlew() {
   if (delta0 >  maxDelta) delta0 =  maxDelta;
   if (delta0 < -maxDelta) delta0 = -maxDelta;
   speedE0_sps += delta0;
+  // enforce cap
+  if (speedE0_sps > MAX_E0_SPS) speedE0_sps = MAX_E0_SPS;
+  if (speedE0_sps < SPS_MIN)    speedE0_sps = 0;
 
   // E1
   float delta1 = targetE1_sps - speedE1_sps;
   if (delta1 >  maxDelta) delta1 =  maxDelta;
   if (delta1 < -maxDelta) delta1 = -maxDelta;
   speedE1_sps += delta1;
+  // enforce cap
+  if (speedE1_sps > MAX_E1_SPS) speedE1_sps = MAX_E1_SPS;
+  if (speedE1_sps < SPS_MIN)    speedE1_sps = 0;
 }
 
 // Service both steppers (non-blocking)
@@ -271,7 +283,7 @@ void setup() {
   delay(50);
   lastReadMs = millis();
 
-  Serial.println("Ready. HEAT toggles heating. Encoder SW: short=select motor, long=reverse dir. E0 gated <160C. Vibrator follows E0.");
+  Serial.println("Ready. Max E0=2400 sps, E1=6000 sps. HEAT toggles heating. Encoder SW short=select motor, long=reverse dir. E0 gated <160C.");
 }
 
 // ================== Loop ==================
@@ -286,10 +298,7 @@ void loop() {
   if (heatBtn && !heatBtnLatched) {
     heatBtnLatched = true;
     heatRequested = !heatRequested;
-    // (re)arm runaway guard on new ON request
-    if (heatRequested) {
-      tr_armed = false; // will arm when heater actually turns on
-    }
+    if (heatRequested) tr_armed = false; // will arm when heater actually turns on
     Serial.print("Heat request -> "); Serial.println(heatRequested ? "ON" : "OFF");
   } else if (!heatBtn) heatBtnLatched = false;
 
@@ -308,9 +317,7 @@ void loop() {
     } else {
       if (heatRequested) {
         if (lastTempC < EXTRUDER_MIN_C) {
-          // turn heater ON
           if (!heaterOn) {
-            // arm runaway guard when we transition ON
             tr_armed = true;
             tr_start_ms = nowms;
             tr_start_temp = lastTempC;
@@ -328,13 +335,11 @@ void loop() {
     if (heaterOn && tr_armed) {
       if (nowms - tr_start_ms > TR_WINDOW_MS) {
         if ((lastTempC - tr_start_temp) < TR_MIN_RISE_C) {
-          // didn't rise enough → kill heat
           heaterOn = false;
           heatRequested = false;
           Serial.println("RUNAWAY GUARD: insufficient temp rise, heater OFF");
         } else {
-          // ok for this window; re-arm for next ON cycle
-          tr_armed = false;
+          tr_armed = false; // passed this window
         }
       }
     }
@@ -344,10 +349,6 @@ void loop() {
 
     // Update extruder temp gate
     extrudeTempOK = (lastTempC >= MIN_EXTRUDE_C);
-
-    // 5V fans follow actual heater state
-    digitalWrite(FAN5V_1_PIN, heaterOn ? HIGH : LOW);
-    digitalWrite(FAN5V_2_PIN, heaterOn ? HIGH : LOW);
 
     // Determine motion states
     bool e0ActuallySpinning = (extrudeTempOK ? speedE0_sps : 0.0f) > 1.0f;
@@ -367,15 +368,18 @@ void loop() {
 
     // ==== Vibrator motor driver follows E0 only ====
     if (e0ActuallySpinning) {
-      // Direction fixed FWD (swap if needed)
       digitalWrite(VIB_MOTOR_A, HIGH);
       digitalWrite(VIB_MOTOR_B, LOW);
-      analogWrite(VIB_MOTOR_EN, VIB_PWM);   // run at configured % speed
+      analogWrite(VIB_MOTOR_EN, VIB_PWM);
     } else {
       analogWrite(VIB_MOTOR_EN, 0);
       digitalWrite(VIB_MOTOR_A, LOW);
       digitalWrite(VIB_MOTOR_B, LOW);
     }
+
+    // 5V fans follow actual heater state
+    digitalWrite(FAN5V_1_PIN, heaterOn ? HIGH : LOW);
+    digitalWrite(FAN5V_2_PIN, heaterOn ? HIGH : LOW);
 
     // Debug
     Serial.print("T="); Serial.print(lastTempC, 1);
@@ -385,7 +389,6 @@ void loop() {
     Serial.print(" | E0="); Serial.print(speedE0_sps, 0);
     Serial.print(" | E1="); Serial.print(speedE1_sps, 0);
     Serial.print(" | Vib(E0)="); Serial.print(e0ActuallySpinning ? "ON" : "OFF");
-    Serial.print(" | PWM12="); Serial.print(pwm12);
-    Serial.print(" | VibPWM="); Serial.println(VIB_PWM);
+    Serial.print(" | PWM12="); Serial.println(pwm12);
   }
 }
