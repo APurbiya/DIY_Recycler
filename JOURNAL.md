@@ -628,3 +628,14 @@ I am headed in the right direction just need to keep going. During the test I di
 
   
 
+## 11/6/2025 - Mainly Code  
+
+Today I worked a lot on the code and getting it to the point where its easy to yuse for anyone. I moved the important variables to the top and fixing the values I talked about in the last journal. I also made a change to have different max speeds for the different motors as they have different number of jumpers attached to them. When I wanted to take a break from fixing code I added some magnets to the funnel on top of the shredder to make shredding easier. I had to remove the magnets from a previous project. I soaked it in IPA to remove it and then I made holes in the both the parts using a old soldering iron and then glueing the magnets in. After the glue dired I realized if put the magnets facing the wrong way so they didn't stick so I had to remove one of the magnets and stick it back. After that I sanded the parts a little so they sit flat. I also did a lot of research to figure out when PLA burns and how I can avoid it. So the new temps should not let it burn. Just to make sure I heated the heat block on my og ender to that temp and extruded very slow to make sure these numbers are good.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTA0OSwicHVyIjoiYmxvYl9pZCJ9fQ==--1e41e0f251cefe2f5346fc9a8643e5732722bf98/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTA1MCwicHVyIjoiYmxvYl9pZCJ9fQ==--bac712244b500c92497e0881f4b072e1761a4aa5/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTA1MiwicHVyIjoiYmxvYl9pZCJ9fQ==--84f69db6c0e48d0e403b0eb20e299eee937e95e3/image.png)
+
+
+  
+
