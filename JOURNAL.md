@@ -639,3 +639,18 @@ Today I worked a lot on the code and getting it to the point where its easy to y
 
   
 
+## 11/7/2025 - Full Systems Test :(  
+
+I wanted to run a fut test from start to finish. I started by gabbing some of the Bambu poop and shredding it up. I ran it through almost 10-15 times to get it small enough to what I likeded. I also tried pelatizing some filament but that did not go so well. Then The heater was heated up so I put everything in and started trying to extrude.
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTMxNCwicHVyIjoiYmxvYl9pZCJ9fQ==--ec921c3c68fa0cb88e241b59c92b084be7da6507/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTMxNSwicHVyIjoiYmxvYl9pZCJ9fQ==--dca729f63364fdeea2ac9d6faf5c0b93cc0a801b/image.png)
+After debugging the heat faliur for a while I realized it was not going to extrude anything so I opened the 250 deg c block (burned my hand doing so) to see what happened, looked like a clog so I cleaned it up put everything back together and tried to run the test again.
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTMxNiwicHVyIjoiYmxvYl9pZCJ9fQ==--89deb8d54861484685708105b83e539f010dd630/image.png) This time when I ran the test nothing came out even after waiting a really long time so I opened the block again :( and saw something better
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTMxNywicHVyIjoiYmxvYl9pZCJ9fQ==--4f7662207dc4cda20b23f64b430a7125ac77b511/image.png) I am thinking it did not get hot enought or something like that. I did not put everything back together cause I realized 2 of the plates got so how they started warping, so I need to reprint them and assembel the whole thing again
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTMxOCwicHVyIjoiYmxvYl9pZCJ9fQ==--b8b9c76ea96557a0f376b1fd704663df621b3c62/image.png)
+
+
+
+
+  
+
