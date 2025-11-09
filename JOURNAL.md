@@ -654,3 +654,23 @@ After debugging the heat faliur for a while I realized it was not going to extru
 
   
 
+## 11/8/2025 - Some hardware Some software  
+
+Today I started by slicing and printing the 2 plates that hold the extruder in place. Once Printed I cleaned up the prints with IPA and then cured them before putting the whole extruder assembly back together. I had to hold glue the fans in place as well. 
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTYzNiwicHVyIjoiYmxvYl9pZCJ9fQ==--9ef9277131be1da28220f4b3f0ff103750ce7bed/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTYzNywicHVyIjoiYmxvYl9pZCJ9fQ==--3affe3bda899c294528791d45806383cf6229e24/image.png)
+
+Then I fixed the magnets that hold up the panel as they were falling off, I had to measure mark and glue to get everything just right. I had to pull some more magnets out from the project to get the magnets I needed. I also messed up some of the poles of the magents and had to rip them off to flip it. At the end I ended up with super glue all over my fingers :(
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTYzOCwicHVyIjoiYmxvYl9pZCJ9fQ==--b3c558368f452d6becaade5f885034b1e71bb4e2/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTYzOSwicHVyIjoiYmxvYl9pZCJ9fQ==--ce71001cd97a62b364b84017b52d287a3efd6c92/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTY0MCwicHVyIjoiYmxvYl9pZCJ9fQ==--b3dd17b77aed22a987c9ac9b1a479eb15049568c/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTY0MSwicHVyIjoiYmxvYl9pZCJ9fQ==--f2a03b83131687bbdf32efed17451fcdb0c83224/image.png)
+
+Then I conected an esp 32 to the tx rx pins of the ramps so I can print everything on a webpage
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTY0MiwicHVyIjoiYmxvYl9pZCJ9fQ==--1b5e6769dfe45c129dae16f251ff16c13540e454/image.png)
+
+After this I started wiriting code. I did not have to change anything on the arduino side as it was already printing the data. But I realized this too late I was messing with the code to make a second serial to send it to that. But after restoring the original code I read a few articles and started writing the code. Then when I started hiting road blocks I asked GPT, but that code took almost 15 mins to compile so I knew something was wrong so I read more articles and got it working. I got the IP adress put it in my browser got the code to load
+![Screenshot 2025-11-08 124044](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTY0MywicHVyIjoiYmxvYl9pZCJ9fQ==--ef9e7e9f18a5ab5e545eb26f58fb70bf2bd5635f/Screenshot%202025-11-08%20124044.png) But it was printing BS so I did more searching and turns out the esp wasnt 3.3v on tx rx but the ramps runs on 5v so I don't think this will work. I am going to upload the code on github but it does not work.
+
+  
+
