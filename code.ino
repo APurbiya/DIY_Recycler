@@ -14,6 +14,49 @@ const uint8_t FAN12_ACTIVE_PWM = (uint8_t)(0.20 * 255); // 20%
 const float MAX_E0_SPS = 2400.0f;  // <-- Extruder cap
 const float MAX_E1_SPS = 6000.0f;  // <-- Spooler cap
 
+
+// Bambu Poop → Filament: RAMPS 1.4 Extruder/Spooler + Heater + Fans + Vibrator
+// Board: Arduino MEGA 2560 + RAMPS 1.4
+// Version: v0.3 (pin fixes, safety latch, MOSFET stuck-on guard, tidy comments)
+// Notes:
+// - This sketch drives two steppers (E0=Extruder on RAMPS X driver, E1=Spooler on RAMPS Y driver),
+// E0 heater MOSFET (D10) + T0 thermistor (A13), 12V PWM fan (D9), two 5V fan pins,
+// and a small DC vibrator motor (via H-bridge) that tracks E0 motion.
+// - Encoder short press: switch active motor (E0/E1). Long press (>700ms): reverse dir of active motor.
+// - Heat button toggles heater request. E0 only turns when hot enough.
+// - Added: pin conflict fixes, hard FAULT latch (requires power cycle),
+// stuck‑on MOSFET guard, compile-time pin collision checks.
+//
+// *********** WIRING (RAMPS 1.4 assumed) ***********
+// * STEPPERS (use X/Y drivers for easier pins; rename if you actually use E0/E1 slots)
+// - E0 (Extruder) -> RAMPS X driver socket (A_* pins below map to X_* pins on RAMPS)
+// A_STEP_PIN = 54 (X_STEP = A0)
+// A_DIR_PIN = 55 (X_DIR = A1)
+// A_ENABLE = 38 (X_EN)
+// - E1 (Spooler) -> RAMPS Y driver socket (B_* pins below map to Y_* pins on RAMPS)
+// B_STEP_PIN = 60 (Y_STEP = A6)
+// B_DIR_PIN = 61 (Y_DIR = A7)
+// B_ENABLE = 56 (Y_EN)
+// * HEATER/TEMP
+// HEATER_PIN = D10 (RAMPS E0 MOSFET)
+// THERMISTOR_PIN = A13 (RAMPS T0)
+// * FANS
+// FAN12_PWM_PIN = D9 (RAMPS 12V Fan MOSFET, PWM)
+// FAN5V_1_PIN = D4 (AUX/SERVO header; 5V logic → drive external 5V MOSFET or small fan)
+// FAN5V_2_PIN = D6 (moved off D5 to avoid conflict; also on SERVO header)
+// * VIBRATOR (small DC motor via L298N/L9110S etc.)
+// VIB_MOTOR_A = D16 (IN1)
+// VIB_MOTOR_B = D17 (IN2)
+// VIB_MOTOR_EN = D5 (PWM ENA) <-- ensure no physical conflict with FAN pins
+// * RELAYS (active‑HIGH, NO contacts)
+// RELAY_VIBRATOR_PIN = D18 (indicator/compat; mirrors E0 motion)
+// RELAY_FAN_PIN = D15 (latch on when heating until < COOL_RELAYFAN_OFF_C)
+// * CONTROLS
+// HEAT_BUTTON_PIN = A15 (active‑LOW momentary)
+// ENC_CLK=D31, ENC_DT=D33, ENC_SW=D35
+// ****************************************************
+
+
 // ====== RAMPS pins ======
 #define A_STEP_PIN    54   // E0 STEP
 #define A_DIR_PIN     55   // E0 DIR
@@ -77,8 +120,6 @@ float speedE1_sps  = 0;
 // Accel (slew) parameters
 const float SPS_MIN  = 0.0f;
 // NOTE: replaced single max with per-motor maxes:
-const float MAX_E0_SPS = 2400.0f;  // <-- Extruder cap
-const float MAX_E1_SPS = 6000.0f;  // <-- Spooler cap
 const float ACCEL_SPS_PER_S = 8000.0f;   // how fast we ramp (steps/s per second)
 
 // Step timing
