@@ -674,3 +674,27 @@ After this I started wiriting code. I did not have to change anything on the ard
 
   
 
+## 11/9/2025 - Ground Work Before final test  
+
+Lots of cad work got done today! I was just prcastinating from running any more tests. Instead of giving them to you in sentences here is a short list
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTk1MCwicHVyIjoiYmxvYl9pZCJ9fQ==--4c0a76b2af5738ff24328497cb6d5b2cfaa612af/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTk1MiwicHVyIjoiYmxvYl9pZCJ9fQ==--ad2ab78b56e46ed66978c2e04df30a971a088a6a/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTk1MywicHVyIjoiYmxvYl9pZCJ9fQ==--3983d1b6244dfd5e9403aeb2001a4beea9d18255/image.png)
+The stepper motor sticks out because I could not find one of the right size after looking for a long time on grab cad.
+
+Designed
+Back Panel
+Front Pannel
+Completed
+Main Assembly
+Extruder Assembly
+Added Stepper Motors
+Added planatery gear box
+Did some Misc fixes in CAD like fixing and solving a few errors and dimensioning everything and contraining it to the assembly so if someone wanted they could use the cad as a assembly guide. I am still going to make a full assembly guide but this will have to do for now.
+
+Then I moved on to update the BOM to have everything I have used so far. I had to add a whole lot of parts that I did not think I would need at first but then ended up using.
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTk1MSwicHVyIjoiYmxvYl9pZCJ9fQ==--b4170ba2ec9fe8d49acd74b32624777fd1c9c583/image.png)
+
+I am also updating the banner photo!
+  
+
