@@ -9,7 +9,7 @@ const float MIN_EXTRUDE_C = 160.0f;     // E0 won't spin below this
 
 // Fan PWM levels
 const uint8_t FAN12_IDLE_PWM   = (uint8_t)(0.15 * 255); // 15%
-const uint8_t FAN12_ACTIVE_PWM = (uint8_t)(0.20 * 255); // 20%
+const uint8_t FAN12_ACTIVE_PWM = (uint8_t)(0.45 * 255); // 20%
 
 const float MAX_E0_SPS = 2400.0f;  // <-- Extruder cap
 const float MAX_E1_SPS = 6000.0f;  // <-- Spooler cap
